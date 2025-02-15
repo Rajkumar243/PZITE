@@ -1,0 +1,1070 @@
+fileFormatVersion: 2
+guid: d01ffee48b6101247bb16b9e6ed1e10e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adea46daa447b6b46a2181986e3166ba
+      internalID: -411478624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc817c7456bf444a9e4c596b1c6892f
+      internalID: -1083736572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379934595f3759344a09232c2c67657d
+      internalID: -1027809596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df150e978947f2a439434cb674ce17ba
+      internalID: 1973143553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb41f659ec847f489d29b5f22b5660c
+      internalID: -1821414279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9aea4c77d043e48a08677010a6ff35
+      internalID: 800145643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 2560
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c28967603010b14e95c8fba62e29a79
+      internalID: 1552086845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee1030895dce5942986eaebd63b6154
+      internalID: 76804590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf43643cdc2359478c48f52e5c2c169
+      internalID: -1326487414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7d68511cf18424e90f1be92e60a055
+      internalID: 377663222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e0a1f1ac4903046a2df3f2d83de406
+      internalID: 596024076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09da00c03017cd745bcc09487d017da9
+      internalID: 1701521613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c56a9d6546bc6b419fae983c59b274a
+      internalID: 1994738380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 2048
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3dfa897a815be48b0e2feabcea00f1
+      internalID: -2127482818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0839e2ac8208e464d8db9321ec5dd45d
+      internalID: 36598287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dc9c7a40b923d468a48c879421ba64
+      internalID: 409492528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ac9cd403fd3214f8b153ecd4655fb0
+      internalID: 1581530616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37675c6ab9caab49b32e990c1796399
+      internalID: -362002748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d00de4c74a349d4da2aa5e678c7d581
+      internalID: 155013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96712cf3e34dfb643b8b5d58af9923cc
+      internalID: 1100469206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_20
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1536
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4542179a287524caa8941beeb32062
+      internalID: 2020955302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb2a517194a498448d60caf52cd799b
+      internalID: -1520526019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_22
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27de99c152443824ca9959feb2ac4535
+      internalID: -199423128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e191fccf2e8b44aad82de375b85d7e
+      internalID: -2057993997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0e4c21a8cdbd242910e9b83224d1c5
+      internalID: 1742590815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_25
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a14068dc09f5549a450b5f3a1dec0c
+      internalID: -727589814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad6ffb4cc87ec848896a66520a846b8
+      internalID: -1370694961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1024
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232d8c999774f9d4aa10fe602cee0e8e
+      internalID: -2049279973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083c4a89e3c7c7148b2b586924cf793c
+      internalID: -2080073788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e95a9ef799a124a913be5369e88a6a
+      internalID: -1089768348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eded9413bc046914c88071f9a94ada26
+      internalID: -1247681029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34862579aeffe914ca298e00a523e481
+      internalID: -810402277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257f5328a16360f4193f06ec0fc5107e
+      internalID: -2017009379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_33
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd6a0ac24535914d8b23e16a49a0bb2
+      internalID: 1095781882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_34
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 512
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1401f3842edf1984fa6210fc84e7d1cd
+      internalID: 1368156820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_35
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d385ed0655467944eab9e55154ec2897
+      internalID: 1028587023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_36
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6d7f85ceb02a04cb4ba07b4580a355
+      internalID: -1387121605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_37
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f3da8474457464fb53b9a0ab893f8c
+      internalID: 2128495851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_38
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da15f6232afa0894fa963b1244625948
+      internalID: 745096836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_39
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a813cadf4dfaf4f8526ad5b5ea5956
+      internalID: 1516583248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_40
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bb1691f4253514aa1f59bf5f3f82d3
+      internalID: -744059680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stopwatch-7503_512 (1)_41
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 500
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866488285ce50904aa785851a04b8aba
+      internalID: -2052333395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stopwatch-7503_512 (1)_17: -362002748
+      stopwatch-7503_512 (1)_26: -1370694961
+      stopwatch-7503_512 (1)_21: -1520526019
+      stopwatch-7503_512 (1)_23: -2057993997
+      stopwatch-7503_512 (1)_22: -199423128
+      stopwatch-7503_512 (1)_13: -2127482818
+      stopwatch-7503_512 (1)_19: 1100469206
+      stopwatch-7503_512 (1)_38: 745096836
+      stopwatch-7503_512 (1)_9: 377663222
+      stopwatch-7503_512 (1)_18: 155013
+      stopwatch-7503_512 (1)_15: 409492528
+      stopwatch-7503_512 (1)_5: 800145643
+      stopwatch-7503_512 (1)_29: -1089768348
+      stopwatch-7503_512 (1)_33: 1095781882
+      stopwatch-7503_512 (1)_31: -810402277
+      stopwatch-7503_512 (1)_36: -1387121605
+      stopwatch-7503_512 (1)_2: -1027809596
+      stopwatch-7503_512 (1)_25: -727589814
+      stopwatch-7503_512 (1)_3: 1973143553
+      stopwatch-7503_512 (1)_24: 1742590815
+      stopwatch-7503_512 (1)_41: -2052333395
+      stopwatch-7503_512 (1)_27: -2049279973
+      stopwatch-7503_512 (1)_4: -1821414279
+      stopwatch-7503_512 (1)_32: -2017009379
+      stopwatch-7503_512 (1)_20: 2020955302
+      stopwatch-7503_512 (1)_7: 76804590
+      stopwatch-7503_512 (1)_11: 1701521613
+      stopwatch-7503_512 (1)_1: -1083736572
+      stopwatch-7503_512 (1)_28: -2080073788
+      stopwatch-7503_512 (1)_12: 1994738380
+      stopwatch-7503_512 (1)_6: 1552086845
+      stopwatch-7503_512 (1)_14: 36598287
+      stopwatch-7503_512 (1)_35: 1028587023
+      stopwatch-7503_512 (1)_0: -411478624
+      stopwatch-7503_512 (1)_34: 1368156820
+      stopwatch-7503_512 (1)_40: -744059680
+      stopwatch-7503_512 (1)_16: 1581530616
+      stopwatch-7503_512 (1)_30: -1247681029
+      stopwatch-7503_512 (1)_8: -1326487414
+      stopwatch-7503_512 (1)_10: 596024076
+      stopwatch-7503_512 (1)_37: 2128495851
+      stopwatch-7503_512 (1)_39: 1516583248
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
