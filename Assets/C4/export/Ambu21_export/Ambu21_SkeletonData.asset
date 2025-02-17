@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Ambu21_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: e544280709c95764baea03100e5d0f6d, type: 2}
+  - {fileID: 11400000, guid: e6f03235ba9d9b04ea684d685b7f5965, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 18235069db49c7e4388e84f47824fa08, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 0468e4894c9eba04cb496e0932d91a72, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0
