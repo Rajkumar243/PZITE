@@ -4263,7 +4263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7685,11 +7685,13 @@ MonoBehaviour:
   - Alphabet_X
   - Alphabet_Y
   - Alphabet_Z
-  - Ask for Eat
+  - Ask_for_eat
   - Candy_eating
   - Clapping
+  - Clapping_great
   - Eating
-  - Eating generic
+  - Eating_generic
+  - Fantastic_2
   - Giggle_1
   - Giggle_2
   - Icecreem_eating
@@ -7699,9 +7701,11 @@ MonoBehaviour:
   - Idle_4
   - Idle_5
   - Kiss
+  - Lets_go_4
   - Milk
   - Sleeping
-  - Suoer_yummy
+  - Super_yummy
+  - Wow_3
   alphabetsAnimationNames:
   - Alphabet_A
   - Alphabet_B
@@ -7765,11 +7769,15 @@ MonoBehaviour:
   - Idle_3
   - Idle_4
   - Idle_5
+  - Ask_for_eat
+  - Lets_go_4
+  - Wow_3
   specialTouchAnimation:
   - Clapping
   - Giggle_1
   - Giggle_2
   - Kiss
+  - Lets_go_4
   eatingAnimation:
   - Eating_generic
   - Super_yummy

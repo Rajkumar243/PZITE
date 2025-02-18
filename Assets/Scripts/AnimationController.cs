@@ -162,7 +162,7 @@ public class AnimationController : MonoBehaviour
     {
        int CurrentIdelAnimationvalue =  Random.Range(0, idelCharacterAnimation.Count);
 
-        StartCoroutine(PlayIdelAnimationAfterDelay(5f, CurrentIdelAnimationvalue));
+        StartCoroutine(PlayIdelAnimationAfterDelay(2f, CurrentIdelAnimationvalue));
 
       
     } 
@@ -189,8 +189,8 @@ public class AnimationController : MonoBehaviour
         skeletonAnimation.state.SetAnimation(0, idelCharacterAnimation[value],false);
         Debug.Log(idelCharacterAnimation[value]);
 
-        
 
+      Invoke("PlayIdelAnimation",5f);
     }
     /// </IdelAnimation>
 
