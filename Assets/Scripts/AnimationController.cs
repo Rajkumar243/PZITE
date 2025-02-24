@@ -150,8 +150,7 @@ public class AnimationController : MonoBehaviour
         StopAllCoroutines();
         alphabetAnimation.Rebind();
         alphabetAnimation.StopPlayback();
-       
-
+      
     }
     /// </Alphabets>
 
@@ -173,9 +172,9 @@ public class AnimationController : MonoBehaviour
         StopCoroutine("PlayIdelAnimationAfterDelay");
         int CurrenttouchAnimationvalue =  Random.Range(0, specialTouchAnimation.Count);
 
-        StartCoroutine(PlayTouchAnimationAfterDelay(1f, CurrenttouchAnimationvalue));
+        StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
 
-        PlayIdelAnimation();
+      
     }
 
 
@@ -205,7 +204,10 @@ public class AnimationController : MonoBehaviour
         skeletonAnimation.state.SetAnimation(0, specialTouchAnimation[value], false);
         Debug.Log(specialTouchAnimation[value]);
 
-        Invoke("PlayIdelAnimation", 3f);
+
+        Spine.Animation CurrentTouchAnimation = skeletonAnimation.Skeleton.Data.FindAnimation(specialTouchAnimation[value]);
+        float animationLength = CurrentTouchAnimation?.Duration ?? 0f; // Duration of the animation in seconds
+        Invoke("PlayIdelAnimation", animationLength);
 
     }
 
@@ -231,7 +233,7 @@ public class AnimationController : MonoBehaviour
         //eating -step
         StopAllCoroutines();
         StopCoroutine("PlayIdelAnimationEatingAfterDelay");
-        StartCoroutine(EatAnimation(0.5f,0));
+        StartCoroutine(EatAnimation(0.0f,0));
 
 
 
@@ -255,6 +257,10 @@ public class AnimationController : MonoBehaviour
         // Play the animation after the delay
         skeletonAnimation.state.SetAnimation(0, eatingAnimation[value], false);
         Debug.Log(eatingAnimation[value]);
+
+
+
+        Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
 
     //Eating end
@@ -277,6 +283,14 @@ public class AnimationController : MonoBehaviour
         }
 
         
+    }
+
+
+    public void StopAllAnimation()
+    {
+        StopAllCoroutines();
+        skeletonAnimation.AnimationState.SetEmptyAnimation(0, 0.2f); // Fades out over 0.2 seconds
+        CancelInvoke();
     }
 
     // Update is called once per frame
