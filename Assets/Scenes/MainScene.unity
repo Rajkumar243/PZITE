@@ -3339,6 +3339,134 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 613298343007149027, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
   m_PrefabInstance: {fileID: 793338675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &800544364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800544366}
+  - component: {fileID: 800544365}
+  m_Layer: 0
+  m_Name: Bg-Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &800544365
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800544364}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e050eb98a1baaaf459a91f97f0f9659f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &800544366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800544364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &828024400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5167,7 +5295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -5183,7 +5311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -5231,7 +5359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: OnChangeFoodFx
+      value: OnchangeIceCreamEatingAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -5268,7 +5396,7 @@ PrefabInstance:
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 9949f69093d21b740b8c3034f905a753, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -5283,7 +5411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Sprite, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
@@ -7778,7 +7906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 613298343007149052, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_Name
-      value: Food-Lolipop
+      value: Food-Candy
       objectReference: {fileID: 0}
     - target: {fileID: 1914385991229461695, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_Sprite
@@ -7794,7 +7922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -7810,7 +7938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -7858,7 +7986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: OnChangeFoodFx
+      value: OnchangeCandyEatingAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -7895,7 +8023,7 @@ PrefabInstance:
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: f2ff6b8a65d347d47a772ee215bc2ca5, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -7910,7 +8038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Sprite, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
@@ -8258,13 +8386,23 @@ MonoBehaviour:
   - Y
   - Z
   idelCharacterAnimation:
+  - Ask_for_eat
   - Idle_1
   - Idle_2
   - Idle_3
   - Idle_4
   - Idle_5
-  - Ask_for_eat
   - Lets_go_4
+  - Idle_1
+  - Idle_2
+  - Idle_3
+  - Idle_4
+  - Idle_5
+  - Idle_1
+  - Idle_2
+  - Idle_3
+  - Idle_4
+  - Idle_5
   - Wow_3
   specialTouchAnimation:
   - Clapping
@@ -8275,6 +8413,9 @@ MonoBehaviour:
   eatingAnimation:
   - Eating_generic
   - Super_yummy
+  GenriceatingAnimation: Eating_generic
+  CandyeatingAnimation: Candy_eating
+  IcecreameatingAnimation: Icecreem_eating
   foodfx: {fileID: 332831094}
   foodSparkle: {fileID: 749369995}
   FoodObjects:

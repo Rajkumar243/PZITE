@@ -27,6 +27,11 @@ public class AnimationController : MonoBehaviour
 
     public List<string> eatingAnimation;
 
+    public string GenriceatingAnimation;
+
+    public string CandyeatingAnimation;
+    public string IcecreameatingAnimation;
+
     public  Image foodfx;
     public GameObject foodSparkle;
 
@@ -188,8 +193,10 @@ public class AnimationController : MonoBehaviour
         skeletonAnimation.state.SetAnimation(0, idelCharacterAnimation[value],false);
         Debug.Log(idelCharacterAnimation[value]);
 
-
-      Invoke("PlayIdelAnimation",5f);
+        Spine.Animation CurrentTouchAnimation = skeletonAnimation.Skeleton.Data.FindAnimation(idelCharacterAnimation[value]);
+        float animationLength = CurrentTouchAnimation?.Duration ?? 0f; // Duration of the animation in seconds
+        Invoke("PlayIdelAnimation", animationLength);
+  
     }
     /// </IdelAnimation>
 
@@ -247,7 +254,14 @@ public class AnimationController : MonoBehaviour
   
     }
 
-
+    public void OnchangeCandyEatingAnimation()
+    {
+        eatingAnimation[0] = CandyeatingAnimation; 
+    } 
+    public void OnchangeIceCreamEatingAnimation()
+    {
+        eatingAnimation[0] = IcecreameatingAnimation; 
+    } 
 
     IEnumerator EatAnimation(float delay, int value)
     {
@@ -258,7 +272,7 @@ public class AnimationController : MonoBehaviour
         skeletonAnimation.state.SetAnimation(0, eatingAnimation[value], false);
         Debug.Log(eatingAnimation[value]);
 
-
+        eatingAnimation[0] = GenriceatingAnimation;
 
         Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
