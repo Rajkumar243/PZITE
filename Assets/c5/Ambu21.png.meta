@@ -1,0 +1,1928 @@
+fileFormatVersion: 2
+guid: d7d38cde0cf3807489b2cd4406496b96
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: B
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 806
+        width: 258
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e17a1d4f08bdae0800000000000000
+      internalID: -1523482259957014988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 1872
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e81d43bbdf3de620800000000000000
+      internalID: 2804968355760249059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Face
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1289
+        width: 586
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9092787d3966eddc0800000000000000
+      internalID: -3612337065942374135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEyeBrow
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 583
+        width: 140
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a24dc013778368c0800000000000000
+      internalID: -4007210315156733275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Blink
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1530
+        width: 180
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099daaaa40d21f1e0800000000000000
+      internalID: -2165900447722055280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Clap1
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 935
+        width: 125
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b22d5b4cbe63e00800000000000000
+      internalID: 1024265195369933679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Ear
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 1244
+        width: 128
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f614bc6cf0d6fc4c0800000000000000
+      internalID: -4265070407569424017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_EyeLid
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 18
+        width: 169
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717baf7e103df4b60800000000000000
+      internalID: 7732631090358826775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_EyeWhite
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1304
+        width: 159
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08e0a9f25a0c3780800000000000000
+      internalID: -8702069028494972918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Hand_1
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1085
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a4de1b875795fa0800000000000000
+      internalID: -5811484682903270816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Ib
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1161
+        width: 132
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac7510e9172b2720800000000000000
+      internalID: 2822392583564917932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_IrisBase
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1928
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34970b9757c594540800000000000000
+      internalID: 4992623321539443011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_IrisBase
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1928
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afacd74ba56c1910800000000000000
+      internalID: 1809432936615554978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Iris_Spec
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1981
+        width: 98
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ad298d4d4dcf4a0800000000000000
+      internalID: -6558132946726626746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Iris_Spec
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1981
+        width: 98
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678efdfc7e895b2b0800000000000000
+      internalID: -5569377242781325194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Lens
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 432
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d477a0ea837c5350800000000000000
+      internalID: 6006803043317150935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Lens
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 432
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fb63b4f2f1bb550800000000000000
+      internalID: 6177565601854570332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_LowerArm
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 302
+        width: 126
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e38f24401c0b970800000000000000
+      internalID: 8768720698537950726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_LowerArm_Kiss
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 956
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d2c04f6cbcbb930800000000000000
+      internalID: 4160142736165186895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Pointing
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 756
+        width: 160
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abaf6aab031e4600800000000000000
+      internalID: 454321553236011942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_Sleep
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1615
+        width: 183
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bfa562efcbff920800000000000000
+      internalID: 3026345274367474520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_SmileBlink
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 480
+        width: 205
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd7303280473d9f0800000000000000
+      internalID: -444884359883555334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_SmileBlink_down
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 659
+        width: 161
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0966e6812f0eb620800000000000000
+      internalID: 2791685455687870730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_ThumbsUp
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 639
+        width: 167
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bef356cf3cd32400800000000000000
+      internalID: 298324166805028529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_UpperArm
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 432
+        width: 114
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a96c18726cf5730800000000000000
+      internalID: 3990125667856849435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_UpperArmShirt1
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 432
+        width: 144
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9e08cacdf408c80800000000000000
+      internalID: -8322564302175147608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_UpperArmShirt2
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 432
+        width: 161
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41f6154ffb0ecad0800000000000000
+      internalID: -2680191537235168948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_UpperArm_Kiss
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 506
+        width: 279
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b84199aef9c51be0800000000000000
+      internalID: -1507076404681815885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_clap2
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 659
+        width: 132
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b9edb2e3b38e920800000000000000
+      internalID: 3019728688361937782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_dimple
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1327
+        width: 92
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0fae1f4df190f60800000000000000
+      internalID: 8000961212452630777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_hand1
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1278
+        width: 229
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e567f03725f308730800000000000000
+      internalID: 3999266092455261790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_kiss
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 432
+        width: 184
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db645ad69eaaea60800000000000000
+      internalID: 7704162075501947863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_plam1
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1840
+        width: 199
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf0b2b611dca6e80800000000000000
+      internalID: -8184503898096332854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_smile_chewing Cheek
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1148
+        width: 253
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c44bb40b29b3290800000000000000
+      internalID: -7909567034664137666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_superyummy
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1761
+        width: 172
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e859ffa61178de30800000000000000
+      internalID: 4528493767576606952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_Black
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 919
+        width: 185
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b233e26382a85b0800000000000000
+      internalID: -5365431792890074341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_Inner_Tongue
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1054
+        width: 131
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23b53306fe212f60800000000000000
+      internalID: 8007733246592135981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_LowerLip
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 553
+        width: 211
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e151c828689175570800000000000000
+      internalID: 8455254890917926174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_UpperLip
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1981
+        width: 207
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cf61212d804b9f0800000000000000
+      internalID: -453727964117926825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_teeth
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1981
+        width: 207
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e132350c3038c50f0800000000000000
+      internalID: -1126881754614652130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laugh_teeth1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1981
+        width: 186
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f629d0a9681ef1f00800000000000000
+      internalID: 1089837603073397359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Love
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1189
+        width: 230
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ce3d03791f577c0800000000000000
+      internalID: -4074084656225194881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milk
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1380
+        width: 307
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44866b96aac57fdf0800000000000000
+      internalID: -146546575878494140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: REyeBrow
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 725
+        width: 140
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33bbcf0c18bae960800000000000000
+      internalID: 7632114949196329790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Blink
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1679
+        width: 177
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f324771fa0759610800000000000000
+      internalID: 1627330737679377400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Clap1
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1062
+        width: 125
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b62581387992b9a0800000000000000
+      internalID: -6218739393939298632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Ear
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1725
+        width: 128
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1876e81412fdc580800000000000000
+      internalID: -8805115528308426723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_EyeLid
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 1855
+        width: 168
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e2b76f0cd9c61c0800000000000000
+      internalID: -4509055674810159468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_EyeWhite
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1890
+        width: 159
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4dfb0e2d40380d70800000000000000
+      internalID: 9009504162597829966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Hand_1
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1927
+        width: 127
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcf45aac753a92f0800000000000000
+      internalID: -965400360567636808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Ib
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1027
+        width: 133
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad729cf651b243030800000000000000
+      internalID: 3473448583679256538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_LowerArm
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 659
+        width: 119
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4da65f6eee5c4f0800000000000000
+      internalID: -808977882315828023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_LowerArm_Kiss
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1537
+        width: 191
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e99a748d33a85d10800000000000000
+      internalID: 2114619509661407718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Pointing
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1372
+        width: 160
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc46be6b4c4a1e8f0800000000000000
+      internalID: -512947717754100529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_Sleep
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1572
+        width: 183
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dc8075d7111e930800000000000000
+      internalID: 4170633959950568779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_SmileBlink
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1190
+        width: 205
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15dd5a7b7cae0d80800000000000000
+      internalID: -8282493018353838820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_SmileBlink_down
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1447
+        width: 167
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4a709ed5ab570b0800000000000000
+      internalID: -5731470038254771028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_ThumbsUp
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 808
+        width: 167
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c62de88b6ee25230800000000000000
+      internalID: 3626222795612825285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_UpperArm
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 432
+        width: 125
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50833b1a923c1b80800000000000000
+      internalID: -8422801565626957732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_UpperArmShirt1
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 432
+        width: 144
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5972b5d10d872bb0800000000000000
+      internalID: -4960841425505584803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_UpperArmShirt2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 925
+        width: 161
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091a4eb28b0a9e380800000000000000
+      internalID: -8941438872296578672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_UpperArm_Kiss
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1855
+        width: 272
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda24ef093e5e3a50800000000000000
+      internalID: 6502738511142333150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_clap2
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 659
+        width: 132
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12008f7f514e8dd0800000000000000
+      internalID: -2481974466217770469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_dimple
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1421
+        width: 92
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe6a17c0ce5cb8d0800000000000000
+      internalID: -2829282283828384069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_hand1
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1269
+        width: 227
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1499e3d82032c530800000000000000
+      internalID: 3873711581404173340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_kiss
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1691
+        width: 179
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ccfcde0c3fa6950800000000000000
+      internalID: 6443230226856004698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_plam_1
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1446
+        width: 195
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6803ebb757cd3b70800000000000000
+      internalID: 8880473219872786538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_smile_chewing Cheek
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1797
+        width: 266
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d6f38ef05766220800000000000000
+      internalID: 2478797356095466802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R_superyummy
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 924
+        width: 172
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b23d201f6718820800000000000000
+      internalID: 2918744811019381610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1932
+        width: 298
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bb645944ce13860800000000000000
+      internalID: 7508041833109699463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torso
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 659
+        width: 468
+        height: 487
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f048e5d685497d0800000000000000
+      internalID: -2912605832241475739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideOpen_lower_teeth
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1069
+        width: 205
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce56493364d8f8f0800000000000000
+      internalID: -506421435451416881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZZZ1
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 919
+        width: 99
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c1c0fa147368330800000000000000
+      internalID: 3712715698062761018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candy
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 250
+        width: 225
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc2c1a8af3695f20800000000000000
+      internalID: 3411868120419937474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1982
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90597f8fa7d59e30800000000000000
+      internalID: 4509747750907760799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair shadow
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 833
+        width: 732
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c3cb8f5f71e8bf0800000000000000
+      internalID: -320292178289214377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1989
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6768ca8aadd4d0800000000000000
+      internalID: -3108140654771344064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice cream
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1391
+        width: 253
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701392d84b496d020800000000000000
+      internalID: 2366242157413085447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: milk_bottle
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 468
+        width: 162
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e968055f8c490480800000000000000
+      internalID: -8932524207422019095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neck
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 224
+        width: 203
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a198381df2e874f20800000000000000
+      internalID: 3406847979158735130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nose
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1180
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3029e1c3fb2d43200800000000000000
+      internalID: 158983605654032899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      L_Sleep: 3026345274367474520
+      L_UpperArmShirt1: -8322564302175147608
+      R_EyeLid: -4509055674810159468
+      R_plam_1: 8880473219872786538
+      L_Blink: -2165900447722055280
+      R_hand1: 3873711581404173340
+      nose: 158983605654032899
+      Laugh_Black: -5365431792890074341
+      hair shadow: -320292178289214377
+      R_ThumbsUp: 3626222795612825285
+      R_Hand_1: -965400360567636808
+      R_Ib: 3473448583679256538
+      R_UpperArm_Kiss: 6502738511142333150
+      R_IrisBase: 1809432936615554978
+      L_EyeWhite: -8702069028494972918
+      L_plam1: -8184503898096332854
+      Laugh_UpperLip: -453727964117926825
+      Laugh_Inner_Tongue: 8007733246592135981
+      R_UpperArm: -8422801565626957732
+      R_smile_chewing Cheek: 2478797356095466802
+      R_SmileBlink_down: -5731470038254771028
+      LEyeBrow: -4007210315156733275
+      L_UpperArmShirt2: -2680191537235168948
+      L_Ear: -4265070407569424017
+      R_Iris_Spec: -5569377242781325194
+      WideOpen_lower_teeth: -506421435451416881
+      R_kiss: 6443230226856004698
+      Milk: -146546575878494140
+      Desk: 2804968355760249059
+      Face: -3612337065942374135
+      R_LowerArm_Kiss: 2114619509661407718
+      R_UpperArmShirt1: -4960841425505584803
+      R_dimple: -2829282283828384069
+      L_LowerArm: 8768720698537950726
+      Laugh_teeth1: 1089837603073397359
+      Smile: 7508041833109699463
+      L_ThumbsUp: 298324166805028529
+      L_SmileBlink: -444884359883555334
+      L_IrisBase: 4992623321539443011
+      REyeBrow: 7632114949196329790
+      Torso: -2912605832241475739
+      milk_bottle: -8932524207422019095
+      L_LowerArm_Kiss: 4160142736165186895
+      R_Clap1: -6218739393939298632
+      neck: 3406847979158735130
+      candy: 3411868120419937474
+      R_Pointing: -512947717754100529
+      R_Lens: 6177565601854570332
+      Laugh_teeth: -1126881754614652130
+      R_UpperArmShirt2: -8941438872296578672
+      R_SmileBlink: -8282493018353838820
+      R_clap2: -2481974466217770469
+      L_SmileBlink_down: 2791685455687870730
+      food: 4509747750907760799
+      L_Ib: 2822392583564917932
+      B: -1523482259957014988
+      R_superyummy: 2918744811019381610
+      L_kiss: 7704162075501947863
+      ZZZ1: 3712715698062761018
+      L_Pointing: 454321553236011942
+      L_Hand_1: -5811484682903270816
+      L_UpperArm: 3990125667856849435
+      L_clap2: 3019728688361937782
+      R_Blink: 1627330737679377400
+      L_superyummy: 4528493767576606952
+      L_Clap1: 1024265195369933679
+      L_dimple: 8000961212452630777
+      Love: -4074084656225194881
+      L_Iris_Spec: -6558132946726626746
+      R_Ear: -8805115528308426723
+      L_hand1: 3999266092455261790
+      ice cream: 2366242157413085447
+      R_EyeWhite: 9009504162597829966
+      L_smile_chewing Cheek: -7909567034664137666
+      ice: -3108140654771344064
+      Laugh_LowerLip: 8455254890917926174
+      L_EyeLid: 7732631090358826775
+      L_Lens: 6006803043317150935
+      R_LowerArm: -808977882315828023
+      R_Sleep: 4170633959950568779
+      L_UpperArm_Kiss: -1507076404681815885
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

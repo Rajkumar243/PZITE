@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SplashScreen : MonoBehaviour
 {
-    public List<Image> SplashImages;
+    public List<GameObject> SplashImages;
 
     public string MainScene;
 
@@ -21,17 +21,13 @@ public class SplashScreen : MonoBehaviour
     void OnplaySplashImage1()
     {
         SplashImages[0].gameObject.SetActive(true);
-        SplashImages[1].gameObject.SetActive(false);
 
-        Invoke("OnplaySplashImage2", 2.5f);
-    }
-    void OnplaySplashImage2()
-    {
-        SplashImages[1].gameObject.SetActive(true);
-        SplashImages[0].gameObject.SetActive(false);
 
-        Invoke("OnLoadScene", 2.5f);
+        Invoke("OnLoadScene", 5.5f);
     }
+  
+       
+    
 
     void OnLoadScene()
     {

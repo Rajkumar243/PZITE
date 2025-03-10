@@ -36,6 +36,8 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
         {
             // If it's within the valid drop area, keep it at the new position
             Debug.Log("Item placed correctly.");
+
+            rectTransform.gameObject.SetActive(false);
         }
         else
         {

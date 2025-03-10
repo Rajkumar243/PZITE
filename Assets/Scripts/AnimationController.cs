@@ -7,13 +7,17 @@ using TMPro;
 public class AnimationController : MonoBehaviour
 {
     public SkeletonAnimation skeletonAnimation;
-
+    public AudioSource _audiosource;
   
     public List<string> animationNames;
 
     public List<string> alphabetsAnimationNames;
 
     public TMP_Text alphabetValue;
+
+    public List<AudioClip>  alphabetAudioClips;
+    public int CurrentalphabetAudioClipValue;
+ 
 
     public int CurrentalphabetValue;
 
@@ -22,12 +26,33 @@ public class AnimationController : MonoBehaviour
     public List<string> alphabetsTexts;
 
 
+    //numeric value
+    public List<string> NumberAnimationNames;
+    public TMP_Text NumberValue;
+    public List<AudioClip> NumberAudioClips;
+    public int CurrentnumberAudioClipValue;
+
+
+    public int CurrentNumberValue;
+
+    public Animator numberAnimation;
+
+    public List<string> numberTexts;
+    //numeric value
+
+
+
     public List<string> idelCharacterAnimation;
     public List<string> specialTouchAnimation;
+    public List<AudioClip> specialTouchAnimationVoice;
 
-    public List<string> eatingAnimation;
 
     public string GenriceatingAnimation;
+    public List<string> eatingAnimation; //Eating_generic
+
+
+    public List<string> EatingReactionAnimations;
+    public List<AudioClip> EatingReactionVoice;
 
     public string CandyeatingAnimation;
     public string IcecreameatingAnimation;
@@ -35,12 +60,14 @@ public class AnimationController : MonoBehaviour
     public  Image foodfx;
     public GameObject foodSparkle;
 
-
     public List<GameObject> FoodObjects;
     public List<GameObject> AlphabetObjects;
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        _audiosource = this.GetComponent<AudioSource>();
+
+
         // Collect all animations from the SkeletonAnimation's SkeletonData
         animationNames = GetAllAnimations();
 
@@ -53,7 +80,11 @@ public class AnimationController : MonoBehaviour
         PlayIdelAnimation();
 
     }
-
+    public void StopAllAnimations()
+    {
+        skeletonAnimation.AnimationState.ClearTracks(); // Stops all animations
+        skeletonAnimation.skeleton.SetToSetupPose();   // Resets to setup pose (optional)
+    }
     private List<string> GetAllAnimations()
     {
         List<string> animationNames = new List<string>();
@@ -98,18 +129,30 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Play("Start");
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
 
-    }
+    } 
+    
+    public void PlayNumberAnimation()
+    {
 
+        StopAllCoroutines();
+        numberAnimation.Rebind();
+        numberAnimation.Play("Start");
+        StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
+
+    }
+    //alphabets
     public void OnNextAlphabet()
     {
 
         if (CurrentalphabetValue < alphabetsAnimationNames.Count - 1)
         {
             CurrentalphabetValue++;
+            CurrentalphabetAudioClipValue++;
         }
         else
         {
             CurrentalphabetValue = 0;
+            CurrentalphabetAudioClipValue = 0;
         }
 
         StopAllCoroutines();
@@ -124,11 +167,12 @@ public class AnimationController : MonoBehaviour
         if (CurrentalphabetValue > 0 && CurrentalphabetValue <= alphabetsAnimationNames.Count - 1)
         {
             CurrentalphabetValue--;
-
+            CurrentalphabetAudioClipValue--;
         }
         else
         {
             CurrentalphabetValue = 0;
+            CurrentalphabetAudioClipValue = 0;
         }
         StopAllCoroutines();
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
@@ -136,7 +180,56 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Play("Start");
         alphabetValue.text = alphabetsTexts[CurrentalphabetValue];
 
+       
+    
     }
+
+
+
+    //numbers
+    public void OnNextNumber()
+    {
+
+        if (CurrentNumberValue < NumberAnimationNames.Count - 1)
+        {
+            CurrentNumberValue++;
+            CurrentnumberAudioClipValue++;
+        }
+        else
+        {
+            CurrentNumberValue = 0;
+            CurrentnumberAudioClipValue = 0;
+        }
+
+        StopAllCoroutines();
+        StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
+        numberAnimation.Rebind();
+        numberAnimation.Play("Start");
+        NumberValue.text = numberTexts[CurrentNumberValue];
+    }
+
+    public void OnPreviousNumber()
+    {
+        if (CurrentNumberValue > 0 && CurrentNumberValue <= NumberAnimationNames.Count - 1)
+        {
+            CurrentNumberValue--;
+            CurrentnumberAudioClipValue--;
+        }
+        else
+        {
+            CurrentNumberValue = 0;
+            CurrentnumberAudioClipValue = 0;
+        }
+        StopAllCoroutines();
+        StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
+        numberAnimation.Rebind();
+        numberAnimation.Play("Start");
+        NumberValue.text = numberTexts[CurrentNumberValue];
+
+
+
+    }
+    //numbers
 
     IEnumerator PlayAnimationAfterDelay(float delay, int value)
     {
@@ -147,10 +240,27 @@ public class AnimationController : MonoBehaviour
         // Play the animation after the delay
         skeletonAnimation.state.SetAnimation(0, alphabetsAnimationNames[value], false);
         Debug.Log(alphabetsAnimationNames[value]);
+        //voice 
+        _audiosource.clip = alphabetAudioClips[CurrentalphabetAudioClipValue];
+        _audiosource.Play();
+    }
+    
+    IEnumerator PlayNumberAnimationAfterDelay(float delay, int value)
+    {
+
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Play the animation after the delay
+        skeletonAnimation.state.SetAnimation(0, NumberAnimationNames[value], false);
+        Debug.Log(NumberAnimationNames[value]);
+        //voice 
+        _audiosource.clip = NumberAudioClips[CurrentnumberAudioClipValue];
+        _audiosource.Play();
     }
 
 
-    public void stopAlphabet()
+    public void stopAlphabet() //stop all animation
     {
         StopAllCoroutines();
         alphabetAnimation.Rebind();
@@ -209,6 +319,13 @@ public class AnimationController : MonoBehaviour
 
         // Play the animation after the delay
         skeletonAnimation.state.SetAnimation(0, specialTouchAnimation[value], false);
+
+        if (specialTouchAnimationVoice[value]!=null)
+        {
+            _audiosource.clip = specialTouchAnimationVoice[value];
+            _audiosource.Play();
+        }
+
         Debug.Log(specialTouchAnimation[value]);
 
 
@@ -249,10 +366,11 @@ public class AnimationController : MonoBehaviour
         // Assuming 'eatingAnimation' is an array or list of animation names (strings)
         Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[0]);
         float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
-        StartCoroutine(EatAnimation(animationLength, 1));
+        //StartCoroutine(EatAnimation(animationLength, 1));
 
-  
     }
+
+
 
     public void OnchangeCandyEatingAnimation()
     {
@@ -261,7 +379,7 @@ public class AnimationController : MonoBehaviour
     public void OnchangeIceCreamEatingAnimation()
     {
         eatingAnimation[0] = IcecreameatingAnimation; 
-    } 
+    }
 
     IEnumerator EatAnimation(float delay, int value)
     {
@@ -272,15 +390,32 @@ public class AnimationController : MonoBehaviour
         skeletonAnimation.state.SetAnimation(0, eatingAnimation[value], false);
         Debug.Log(eatingAnimation[value]);
 
+       
+  
+
         eatingAnimation[0] = GenriceatingAnimation;
+
+
+        // Assuming 'eatingAnimation' is an array or list of animation names (strings)
+        Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[value]);
+        float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
+
+        yield return new WaitForSeconds(animationLength + 1f);
+        StartCoroutine("EatingReactionAnimation");
+    }
+
+    public void EatingReactionAnimation()
+    {
+        int currrenteatingReaction = Random.Range(0, EatingReactionAnimations.Count);
+        skeletonAnimation.state.SetAnimation(0,EatingReactionAnimations[currrenteatingReaction], false);
+        Debug.Log(EatingReactionAnimations[currrenteatingReaction]);
+        //foodeating voice
+            _audiosource.clip = EatingReactionVoice[currrenteatingReaction];
+            _audiosource.Play();
+        
 
         Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
-
-    //Eating end
-
-
-
 
     //reset
 
@@ -305,6 +440,12 @@ public class AnimationController : MonoBehaviour
         StopAllCoroutines();
         skeletonAnimation.AnimationState.SetEmptyAnimation(0, 0.2f); // Fades out over 0.2 seconds
         CancelInvoke();
+
+        if (!IsInvoking("PlayIdelAnimation"))
+        {
+            Invoke("PlayIdelAnimation", 0.5f);
+        }
+           
     }
 
     // Update is called once per frame
