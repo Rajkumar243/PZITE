@@ -267,6 +267,20 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.StopPlayback();
       
     }
+
+
+    public void ResetAlphabetsNumbers()
+    {
+
+        CurrentNumberValue = 0;
+        CurrentnumberAudioClipValue = 0;
+        NumberValue.text = "1";
+
+
+        CurrentalphabetAudioClipValue = 0;
+        CurrentalphabetValue = 0;
+        alphabetValue.text = "A";
+    }
     /// </Alphabets>
 
 
@@ -431,7 +445,9 @@ public class AnimationController : MonoBehaviour
             _gameobject.SetActive(false);
         }
 
-        
+        ResetAlphabetsNumbers();
+
+
     }
 
 

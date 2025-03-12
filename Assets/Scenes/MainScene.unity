@@ -1469,7 +1469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1504,6 +1504,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1698471035}
@@ -1536,6 +1540,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 941653251}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_Target
+      value: 
+      objectReference: {fileID: 1698471035}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -1565,6 +1573,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[8].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
@@ -1600,6 +1612,10 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_MethodName
+      value: StopAllAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AnimationController, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -1630,6 +1646,10 @@ PrefabInstance:
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[8].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_TargetAssemblyTypeName
+      value: AnimationController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
@@ -1673,6 +1693,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116134184439716449, guid: 9bca4e34affba4c30aed8541742d7984, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[9].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9104,26 +9128,26 @@ MonoBehaviour:
   - 20
   NumberValue: {fileID: 1774762423}
   NumberAudioClips:
-  - {fileID: 8300000, guid: e9278e67323a5e34987d9ac09fdf00c2, type: 3}
-  - {fileID: 8300000, guid: cfcc7df5afb46104b9a89e829a1c61bf, type: 3}
-  - {fileID: 8300000, guid: 0c18355350127ec418822261239738a1, type: 3}
-  - {fileID: 8300000, guid: d7aa918bdf0871b47962ae899f49eae6, type: 3}
-  - {fileID: 8300000, guid: 088cd8f4a5bb6af4ea05dcaa5e4e56a3, type: 3}
-  - {fileID: 8300000, guid: 8c9fa64c98bbbf64fb28461b313d55ec, type: 3}
-  - {fileID: 8300000, guid: 53a8305e366e117479aecd301273cfff, type: 3}
-  - {fileID: 8300000, guid: 98027e91add119c4288cceae72dfd522, type: 3}
-  - {fileID: 8300000, guid: a30dd66d083830f468764614ad0dfa61, type: 3}
-  - {fileID: 8300000, guid: faf2ec50d1d80a542a633f8ba13369fa, type: 3}
-  - {fileID: 8300000, guid: a8c2b65d4430fa04d9ea5b60ed779efe, type: 3}
-  - {fileID: 8300000, guid: 8d6749f19dfcee349a60a7641f00fafe, type: 3}
-  - {fileID: 8300000, guid: 029508ac3d4103a42a9d9dc9c634a6c7, type: 3}
-  - {fileID: 8300000, guid: 782f14a955cd224499886c9ed140ef78, type: 3}
-  - {fileID: 8300000, guid: 738c4a4cf35e2e34b816c55dc3c222f1, type: 3}
-  - {fileID: 8300000, guid: 67bef3e5194ca5a488d1c82e86600b99, type: 3}
-  - {fileID: 8300000, guid: abbc632c15efe094bb1737d189d8f29b, type: 3}
-  - {fileID: 8300000, guid: ae14282a9ee4f474db545f13ae29c47e, type: 3}
-  - {fileID: 8300000, guid: 0b007f99bc524614c9a6977ab07a58ee, type: 3}
-  - {fileID: 8300000, guid: 7b2a2de19c0063d478ddd489155dbcca, type: 3}
+  - {fileID: 8300000, guid: 8c2ab2c29a1558841aa26dcb376977b2, type: 3}
+  - {fileID: 8300000, guid: 63ffa8ceec2c7c74897daece8b9d058d, type: 3}
+  - {fileID: 8300000, guid: 7cd0e7955cd8277449cad182faee3c9d, type: 3}
+  - {fileID: 8300000, guid: 3c3ac0cd454ff36438c0445ad739b2a0, type: 3}
+  - {fileID: 8300000, guid: 54686bf998422254aa86f1490d8a44a4, type: 3}
+  - {fileID: 8300000, guid: 1151da6754c82c842b19196d526f4fe9, type: 3}
+  - {fileID: 8300000, guid: 0cdfec4fbed40e14c9dea2fa7fe5e200, type: 3}
+  - {fileID: 8300000, guid: 737c921038d1894499bab90113e03293, type: 3}
+  - {fileID: 8300000, guid: 230161895674e2f408f4c923943e41c2, type: 3}
+  - {fileID: 8300000, guid: e14c7100ebfe13d4fa9b2c8d9f86e665, type: 3}
+  - {fileID: 8300000, guid: 322ee1ad2088d1f4489a288ae25c46f9, type: 3}
+  - {fileID: 8300000, guid: 3b6d7666d2588484fad2bdb039649feb, type: 3}
+  - {fileID: 8300000, guid: a25fb948626b72644b9a0a936a5a0ce3, type: 3}
+  - {fileID: 8300000, guid: 7f058ab5196e6d74fbec28dddd1cad33, type: 3}
+  - {fileID: 8300000, guid: ebcbef15888d4454f955908538a1496a, type: 3}
+  - {fileID: 8300000, guid: 2785d2e65dd45024282e2d9760ea6268, type: 3}
+  - {fileID: 8300000, guid: 48b0650416fe3384eab8b0552d59a3e7, type: 3}
+  - {fileID: 8300000, guid: 153423e03fdeefa42b7b2e1924a7b561, type: 3}
+  - {fileID: 8300000, guid: 73ba1e9e0e00d5747acc9c70ce67a1dd, type: 3}
+  - {fileID: 8300000, guid: bbc65109394e55b469b3b24a1ed7ca8e, type: 3}
   CurrentnumberAudioClipValue: 0
   CurrentNumberValue: 0
   numberAnimation: {fileID: 537765718}
@@ -9182,9 +9206,6 @@ MonoBehaviour:
   GenriceatingAnimation: Eating_generic
   eatingAnimation:
   - Eating_generic
-  FoodEatingAudioClips:
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 6d7ddac5b13995a40bad8578417dd613, type: 3}
   EatingReactionAnimations:
   - Wow_3
   - Super_yummy
