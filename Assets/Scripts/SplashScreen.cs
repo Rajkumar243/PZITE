@@ -23,7 +23,7 @@ public class SplashScreen : MonoBehaviour
         SplashImages[0].gameObject.SetActive(true);
 
 
-        Invoke("OnLoadScene", 5.5f);
+        Invoke("OnLoadScene", 5f);
     }
   
        

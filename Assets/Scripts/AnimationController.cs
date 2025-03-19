@@ -55,10 +55,18 @@ public class AnimationController : MonoBehaviour
     public List<AudioClip> EatingReactionVoice;
 
     public string CandyeatingAnimation;
+    public bool IsCandyEat;
+
     public string IcecreameatingAnimation;
+    public bool IsIceCreamEat;
+
 
     public  Image foodfx;
     public GameObject foodSparkle;
+
+    public List<string> SleepingAnimation;
+    public bool IsSleeping;
+
 
     public List<GameObject> FoodObjects;
     public List<GameObject> AlphabetObjects;
@@ -356,6 +364,10 @@ public class AnimationController : MonoBehaviour
     {
         foodSparkle.SetActive(true);
         foodfx.sprite = foodImage;
+        Invoke("DelayedFoodEnable", 0.3f);
+    }
+    public void DelayedFoodEnable()
+    {
         foodfx.transform.localPosition = new Vector3(0, -255, 0);
         foodfx.gameObject.SetActive(true);
         Invoke("SparkleOff", 2f);
@@ -388,12 +400,14 @@ public class AnimationController : MonoBehaviour
 
     public void OnchangeCandyEatingAnimation()
     {
-        eatingAnimation[0] = CandyeatingAnimation; 
+        IsCandyEat = true;
     } 
     public void OnchangeIceCreamEatingAnimation()
     {
-        eatingAnimation[0] = IcecreameatingAnimation; 
+        IsIceCreamEat = true;
     }
+
+  
 
     IEnumerator EatAnimation(float delay, int value)
     {
@@ -401,21 +415,50 @@ public class AnimationController : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Play the animation after the delay
-        skeletonAnimation.state.SetAnimation(0, eatingAnimation[value], false);
-        Debug.Log(eatingAnimation[value]);
+       // skeletonAnimation.state.SetAnimation(0, eatingAnimation[value], false);
+     //   Debug.Log(eatingAnimation[value]);
 
        
   
 
-        eatingAnimation[0] = GenriceatingAnimation;
+      //  eatingAnimation[0] = GenriceatingAnimation;
 
 
         // Assuming 'eatingAnimation' is an array or list of animation names (strings)
-        Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[value]);
-        float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
 
-        yield return new WaitForSeconds(animationLength + 1f);
-        StartCoroutine("EatingReactionAnimation");
+        if (!IsCandyEat && !IsIceCreamEat)
+        {
+            int currrenteatingAnimation = Random.Range(0, eatingAnimation.Count);
+            skeletonAnimation.state.SetAnimation(0, eatingAnimation[currrenteatingAnimation], false);
+            Debug.Log(eatingAnimation[currrenteatingAnimation]);
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[currrenteatingAnimation]);
+            float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
+            yield return new WaitForSeconds(animationLength + 1f);
+            StartCoroutine("EatingReactionAnimation");
+        }
+        else if(IsCandyEat)
+        {
+            skeletonAnimation.state.SetAnimation(0, CandyeatingAnimation, false);
+            Debug.Log(CandyeatingAnimation);
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(CandyeatingAnimation);
+            float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
+            yield return new WaitForSeconds(animationLength + 1f);
+            StartCoroutine("EatingReactionAnimation");
+            IsCandyEat = false;
+        }
+        else if(IsIceCreamEat)
+        {
+            skeletonAnimation.state.SetAnimation(0, IcecreameatingAnimation, false);
+            Debug.Log(IcecreameatingAnimation);
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(IcecreameatingAnimation);
+            float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
+            yield return new WaitForSeconds(animationLength + 1f);
+            StartCoroutine("EatingReactionAnimation");
+            IsIceCreamEat = false;
+        }
+            
+
+   
     }
 
     public void EatingReactionAnimation()
@@ -431,7 +474,35 @@ public class AnimationController : MonoBehaviour
         Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
 
+
+    //SleepingAnimation
+
+
+    public void PlaySleepingAnimation()
+    {
+        StopAllAnimation();
+        StopAllAnimations();
+        StopAllCoroutines();
+        CancelInvoke("PlayIdelAnimation");
+        int currrentSleepingAnimation = Random.Range(0, SleepingAnimation.Count);
+        skeletonAnimation.state.SetAnimation(0, SleepingAnimation[currrentSleepingAnimation], true);
+        Debug.Log(SleepingAnimation[currrentSleepingAnimation]);
+
+
+    }
+
+
+    //SleepingAnimation
+
+
+
+
+
     //reset
+
+
+
+
 
     public void ResetAlphabets()
     {
