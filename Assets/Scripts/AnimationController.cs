@@ -492,31 +492,34 @@ public class AnimationController : MonoBehaviour
         {
             skeletonAnimation.state.SetAnimation(0, CandyeatingAnimation, false);
             Debug.Log(CandyeatingAnimation);
+            IsCandyEat = false;
             Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(CandyeatingAnimation);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             yield return new WaitForSeconds(animationLength + 1f);
             StartCoroutine("EatingReactionAnimation");
-            IsCandyEat = false;
+            
         }
         else if(IsIceCreamEat)
         {
             skeletonAnimation.state.SetAnimation(0, IcecreameatingAnimation, false);
             Debug.Log(IcecreameatingAnimation);
+            IsIceCreamEat = false;
             Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(IcecreameatingAnimation);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             yield return new WaitForSeconds(animationLength + 1f);
             StartCoroutine("EatingReactionAnimation");
-            IsIceCreamEat = false;
+          
         }
         else if(IsMilkEat)
         {
             skeletonAnimation.state.SetAnimation(0, MilkeatingAnimation, false);
             Debug.Log(MilkeatingAnimation);
+            IsMilkEat = false;
             Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(MilkeatingAnimation);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             yield return new WaitForSeconds(animationLength + 1f);
             StartCoroutine("EatingReactionAnimation");
-            IsMilkEat = false;
+          
         }
         else if (IsCerealEat)
         {
