@@ -10,6 +10,9 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
     public RectTransform validDropArea;  // The valid drop area for the food icon
     private Vector3 originalPosition;    // To store the original position of the food icon
 
+    public AnimationController _animationController;
+
+    //public GameObject VfxEffectCanvas;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -25,10 +28,10 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
    
     public void OnBeginDrag(PointerEventData eventData)
     {
-       
+        Debug.Log("begin");
     }
 
-
+   
     public void OnEndDrag(PointerEventData eventData)
     {
         // Check if the food icon is within the valid drop area
@@ -38,6 +41,12 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
             Debug.Log("Item placed correctly.");
 
             rectTransform.gameObject.SetActive(false);
+            rectTransform.position = originalPosition;
+            Debug.Log(rectTransform.gameObject);
+            if(rectTransform.gameObject.name == "OnDesk-Spoon")
+            {
+                _animationController.PlayEatingAnimation();
+            }
         }
         else
         {

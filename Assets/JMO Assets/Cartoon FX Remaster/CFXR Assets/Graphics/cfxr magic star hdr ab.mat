@@ -8,17 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cfxr magic star hdr ab
-  m_Shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
   m_ValidKeywords:
   - _ALPHABLEND_ON
   - _CFXR_DITHERED_SHADOWS_ON
+  - _CFXR_OVERLAYTEX_1X
   - _FADING_ON
   m_InvalidKeywords:
   - _
   - _CFXR_HDR_BOOST
   - _CFXR_OVERLAYBLEND_RGBA
-  - _CFXR_OVERLAYTEX_OFF
   - _CFXR_SINGLE_CHANNEL
   - _SINGLECHANNEL_ON
   m_LightmapFlags: 0
@@ -69,7 +68,7 @@ Material:
     - _BumpScale: 1
     - _CFXR_DITHERED_SHADOWS: 1
     - _CFXR_OVERLAYBLEND: 0
-    - _CFXR_OVERLAYTEX: 0
+    - _CFXR_OVERLAYTEX: 1
     - _Cutoff: 0.1
     - _DirLightScreenAtten: 1
     - _DirectLightingRamp: 1
