@@ -48,13 +48,33 @@ public class AnimationController : MonoBehaviour
 
 
     public string GenriceatingAnimation;
-    public List<string> eatingAnimation; //Eating_generic
 
+    [System.Serializable]
+    public class EatingAnimation
+    {
+        public string animationName;
+        public AudioClip clip;
+    }
+
+    public List<EatingAnimation> eatingAnimation; //Eating_generic
+
+   
 
     public List<string> EatingReactionAnimations;
     public List<AudioClip> EatingReactionVoice;
 
-    public string CandyeatingAnimation;
+
+    [System.Serializable]
+    public class CandyeatingAnimation
+    {
+        public string animationName;
+        public AudioClip clip;
+    }
+    public CandyeatingAnimation Candyeating; //Eating_generic
+
+
+
+    //public string CandyeatingAnimation;
     public bool IsCandyEat;
 
     public string IcecreameatingAnimation;
@@ -67,6 +87,7 @@ public class AnimationController : MonoBehaviour
     public bool IsCerealEat;
     public GameObject CerealBowl;
     public GameObject CerealBowlSpoon;
+    public AudioClip CerealAudioCilp;
 
     public  Image foodfx;
     public  Image foodfxSpoon;
@@ -380,7 +401,7 @@ public class AnimationController : MonoBehaviour
     {
         foodfx.transform.localPosition = new Vector3(0, -255, 0);
         foodfx.gameObject.SetActive(true);
-        Invoke("SparkleOff", 2f);
+        Invoke("SparkleOff", 1f);
     }
 
     public void SpoonOnChangeFoodFx(Sprite foodImage)
@@ -393,7 +414,7 @@ public class AnimationController : MonoBehaviour
     {
         foodfx.transform.localPosition = new Vector3(0, -255, 0);
         foodfxSpoon.gameObject.SetActive(true);
-        Invoke("SparkleOff", 2f);
+        Invoke("SparkleOff", 1f);
     }
 
 
@@ -416,7 +437,9 @@ public class AnimationController : MonoBehaviour
         //yummy -step
 
         // Assuming 'eatingAnimation' is an array or list of animation names (strings)
-        Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[0]);
+        Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[0].animationName);
+        _audiosource.clip = eatingAnimation[0].clip;
+        _audiosource.Play();
         float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
         //StartCoroutine(EatAnimation(animationLength, 1));
 
@@ -481,23 +504,37 @@ public class AnimationController : MonoBehaviour
         if (!IsCandyEat && !IsIceCreamEat && !IsMilkEat && !IsCerealEat)
         {
             int currrenteatingAnimation = Random.Range(0, eatingAnimation.Count);
-            skeletonAnimation.state.SetAnimation(0, eatingAnimation[currrenteatingAnimation], false);
+            skeletonAnimation.state.SetAnimation(0, eatingAnimation[currrenteatingAnimation].animationName, false);
+            _audiosource.clip = eatingAnimation[currrenteatingAnimation].clip;
+            _audiosource.Play();
             Debug.Log(eatingAnimation[currrenteatingAnimation]);
-            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[currrenteatingAnimation]);
+         
+            
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[currrenteatingAnimation].animationName);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             yield return new WaitForSeconds(animationLength + 1f);
             StartCoroutine("EatingReactionAnimation");
         }
         else if(IsCandyEat)
         {
-            skeletonAnimation.state.SetAnimation(0, CandyeatingAnimation, false);
-            Debug.Log(CandyeatingAnimation);
+            skeletonAnimation.state.SetAnimation(0,Candyeating.animationName, false);
+            Debug.Log(Candyeating.animationName);
+
+            //foodeating voice
+            _audiosource.clip = Candyeating.clip;
+           _audiosource.Play();
+            Debug.Log(Candyeating.clip);
+
+
             IsCandyEat = false;
-            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(CandyeatingAnimation);
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(Candyeating.animationName);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             yield return new WaitForSeconds(animationLength + 1f);
             StartCoroutine("EatingReactionAnimation");
+
             
+
+
         }
         else if(IsIceCreamEat)
         {
@@ -526,9 +563,16 @@ public class AnimationController : MonoBehaviour
             IsCerealEat = false;
             Debug.Log("here");
             int currrenteatingAnimation = Random.Range(0, eatingAnimation.Count);
-            skeletonAnimation.state.SetAnimation(0, eatingAnimation[currrenteatingAnimation], false);
+            skeletonAnimation.state.SetAnimation(0, eatingAnimation[currrenteatingAnimation].animationName, false);
             Debug.Log(eatingAnimation[currrenteatingAnimation]);
-            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[currrenteatingAnimation]);
+
+            //foodeating voice
+            _audiosource.clip = CerealAudioCilp;
+            _audiosource.Play();
+            Debug.Log(CerealAudioCilp);
+
+
+            Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(eatingAnimation[currrenteatingAnimation].animationName);
             float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
             CerealBowl.SetActive(false);//disable the cereal bowl
             CerealBowlSpoon.SetActive(true);//enable the cereal bowlspoon
