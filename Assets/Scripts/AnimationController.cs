@@ -99,8 +99,16 @@ public class AnimationController : MonoBehaviour
     public bool IsSleeping;
 
 
+
+    public List<string> EmotionAnimations;
+
+
+
     public List<GameObject> FoodObjects;
     public List<GameObject> AlphabetObjects;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,6 +131,7 @@ public class AnimationController : MonoBehaviour
     {
         skeletonAnimation.AnimationState.ClearTracks(); // Stops all animations
         skeletonAnimation.skeleton.SetToSetupPose();   // Resets to setup pose (optional)
+        _audiosource.Stop();
     }
     private List<string> GetAllAnimations()
     {
@@ -329,7 +338,7 @@ public class AnimationController : MonoBehaviour
     {
        int CurrentIdelAnimationvalue =  Random.Range(0, idelCharacterAnimation.Count);
 
-        StartCoroutine(PlayIdelAnimationAfterDelay(2f, CurrentIdelAnimationvalue));
+        StartCoroutine(PlayIdelAnimationAfterDelay(0.5f, CurrentIdelAnimationvalue));
 
       
     } 
@@ -623,6 +632,20 @@ public class AnimationController : MonoBehaviour
     //SleepingAnimation
 
 
+    //EmotionAnimations
+    public void OnEmotionAnimationsPlay(int currrentEmotionAnimation)
+    {
+        CancelInvoke("PlayIdelAnimation");
+        skeletonAnimation.state.SetAnimation(0, EmotionAnimations[currrentEmotionAnimation], true);
+        Debug.Log(EmotionAnimations[currrentEmotionAnimation]);
+        //EmotionAnimations voice
+        // _audiosource.clip = EatingReactionVoice[currrenteatingReaction];
+        // _audiosource.Play();
+
+
+        Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
+    }
+
 
 
 
@@ -660,6 +683,8 @@ public class AnimationController : MonoBehaviour
         {
             Invoke("PlayIdelAnimation", 0.5f);
         }
+
+        _audiosource.Stop();
            
     }
 

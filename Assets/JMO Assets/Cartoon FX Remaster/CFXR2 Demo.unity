@@ -7161,6 +7161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1691012740}
     m_Modifications:
+    - target: {fileID: 1886875117484163413, guid: 8c504a39093d2d947a8e422ac981664b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1886875117484163434, guid: 8c504a39093d2d947a8e422ac981664b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -7228,6 +7232,10 @@ PrefabInstance:
     - target: {fileID: 2652970665079830719, guid: 8c504a39093d2d947a8e422ac981664b, type: 3}
       propertyPath: m_Intensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771839881061219104, guid: 8c504a39093d2d947a8e422ac981664b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7808685345215319778, guid: 8c504a39093d2d947a8e422ac981664b, type: 3}
       propertyPath: clearBehavior
