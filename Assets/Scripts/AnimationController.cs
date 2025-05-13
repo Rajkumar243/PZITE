@@ -63,6 +63,8 @@ public class AnimationController : MonoBehaviour
     public List<string> EatingReactionAnimations;
     public List<AudioClip> EatingReactionVoice;
 
+    public List<AnimationClip> FoodFxAnimation;
+    public GameObject FoodFxImage;
 
     [System.Serializable]
     public class CandyeatingAnimation
@@ -399,6 +401,21 @@ public class AnimationController : MonoBehaviour
 
 
     //Eating start
+    public void FoodFxAnimationClip(string clipName)
+    {
+        AnimationClip clip = FoodFxAnimation.Find(c => c.name == clipName);
+
+        if (clip != null )
+        {
+            FoodFxImage.GetComponent<Animator>().StopPlayback();
+            
+            FoodFxImage.GetComponent<Animator>().Play(clipName);
+        }
+        else
+        {
+            Debug.LogWarning($"Animator or clip '{clipName}' not found.");
+        }
+    }
 
     public void OnChangeFoodFx(Sprite foodImage)
     {
@@ -410,7 +427,7 @@ public class AnimationController : MonoBehaviour
     {
         foodfx.transform.localPosition = new Vector3(0, -255, 0);
         foodfx.gameObject.SetActive(true);
-        Invoke("SparkleOff", 1f);
+        Invoke("SparkleOff", 1.5f);
     }
 
     public void SpoonOnChangeFoodFx(Sprite foodImage)
