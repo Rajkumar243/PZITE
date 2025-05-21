@@ -101,6 +101,8 @@ public class AnimationController : MonoBehaviour
     public bool IsSleeping;
 
 
+    public string WakeupAnimation;
+
 
     public List<string> EmotionAnimations;
 
@@ -349,11 +351,23 @@ public class AnimationController : MonoBehaviour
     {
         StopAllCoroutines();
         StopCoroutine("PlayIdelAnimationAfterDelay");
-        int CurrenttouchAnimationvalue =  Random.Range(0, specialTouchAnimation.Count);
 
-        StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
+        string currentAnimationName = skeletonAnimation.AnimationState.GetCurrent(0)?.Animation.Name;
 
-      
+        if (currentAnimationName== "Sleeping_new" || currentAnimationName == "Sleeping_new_v1")
+        {
+
+            skeletonAnimation.state.SetAnimation(0, "waking_up", false);
+
+        }
+        else
+        {
+            int CurrenttouchAnimationvalue = Random.Range(0, specialTouchAnimation.Count);
+            StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
+
+        }
+
+
     }
 
 
