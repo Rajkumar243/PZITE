@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Ammu_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 1090fd7a8bfc0234da6c95a05ac315f4, type: 2}
+  - {fileID: 11400000, guid: 2813ad6feac45a643894d669708310a9, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 73856c534de8599438e5d5703593535d, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: d9ee5be669ff5704583a672dc5864057, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

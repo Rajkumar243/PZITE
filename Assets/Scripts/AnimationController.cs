@@ -43,6 +43,8 @@ public class AnimationController : MonoBehaviour
 
 
     public List<string> idelCharacterAnimation;
+
+    public string AlphabetIdelAnimation;
     public List<string> specialTouchAnimation;
     public List<AudioClip> specialTouchAnimationVoice;
 
@@ -338,6 +340,22 @@ public class AnimationController : MonoBehaviour
 
 
     /// <IdelAnimation>
+
+    public void AlphabetsIdelAnimation()
+    {
+        CancelInvoke("PlayIdelAnimation");
+
+        Debug.Log("alphabets Idel");
+        skeletonAnimation.state.SetAnimation(0, idelCharacterAnimation[3], false);
+        Spine.Animation CurrentTouchAnimation = skeletonAnimation.Skeleton.Data.FindAnimation(idelCharacterAnimation[3]);
+        float animationLength = CurrentTouchAnimation?.Duration ?? 0f; // Duration of the animation in seconds
+        CancelInvoke("AlphabetsIdelAnimation");
+        Invoke("AlphabetsIdelAnimation", animationLength+1f);
+    }
+
+
+
+
     public void PlayIdelAnimation()
     {
        int CurrentIdelAnimationvalue =  Random.Range(0, idelCharacterAnimation.Count);
@@ -358,6 +376,7 @@ public class AnimationController : MonoBehaviour
         {
 
             skeletonAnimation.state.SetAnimation(0, "waking_up", false);
+            PlayIdelAnimation();
 
         }
         else

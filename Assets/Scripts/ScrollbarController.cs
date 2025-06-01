@@ -8,10 +8,11 @@ public class ScrollbarController : MonoBehaviour
     RectTransform rectTransform;
     public int TopPosY;
     public int BottomPosY;
-
+    private Vector3 Intposy;
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+        Intposy = rectTransform.transform.position;
     }
 
     void Update()
@@ -25,5 +26,10 @@ public class ScrollbarController : MonoBehaviour
 
         // Apply the clamped position
         rectTransform.anchoredPosition = position;
+    }
+
+    public void ResetPosy()
+    {
+        rectTransform.position = Intposy;
     }
 }
