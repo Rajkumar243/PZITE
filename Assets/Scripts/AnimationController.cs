@@ -350,7 +350,7 @@ public class AnimationController : MonoBehaviour
         Spine.Animation CurrentTouchAnimation = skeletonAnimation.Skeleton.Data.FindAnimation(idelCharacterAnimation[3]);
         float animationLength = CurrentTouchAnimation?.Duration ?? 0f; // Duration of the animation in seconds
         CancelInvoke("AlphabetsIdelAnimation");
-        Invoke("AlphabetsIdelAnimation", animationLength+1f);
+        Invoke("AlphabetsIdelAnimation", animationLength +0.5f);
     }
 
 
@@ -500,7 +500,7 @@ public class AnimationController : MonoBehaviour
         _audiosource.clip = eatingAnimation[0].clip;
         _audiosource.Play();
         float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
-        //StartCoroutine(EatAnimation(animationLength, 1));
+       
 
     }
 
@@ -544,6 +544,9 @@ public class AnimationController : MonoBehaviour
 
     IEnumerator EatAnimation(float delay, int value)
     {
+        CancelInvoke("PlayIdelAnimation");
+        
+
         // Wait for the specified delay
         yield return new WaitForSeconds(delay);
 
@@ -656,9 +659,12 @@ public class AnimationController : MonoBehaviour
         //foodeating voice
             _audiosource.clip = EatingReactionVoice[currrenteatingReaction];
             _audiosource.Play();
-        
 
-        Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
+        Debug.Log("here");
+       
+        Spine.Animation eatingAnim = skeletonAnimation.Skeleton.Data.FindAnimation(EatingReactionAnimations[currrenteatingReaction]);
+        float animationLength = eatingAnim?.Duration ?? 0f; // Duration of the animation in seconds
+        Invoke("PlayIdelAnimation", animationLength + 1f);//play idle animation after eat food animation
     }
 
 

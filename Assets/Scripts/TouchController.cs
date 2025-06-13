@@ -12,12 +12,32 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 
     public AnimationController _animationController;
 
+    private bool isHovered = false;
+    private bool isDragging = false;
+
+    public float floatAmplitude = 5f;
+    public float floatFrequency = 1f;
+
+    private Vector2 baseAnchoredPosition;
+    private float floatStartTime;
+
     //public GameObject VfxEffectCanvas;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         // Store the original position when the drag begins
         originalPosition = rectTransform.position;
+        // initialPosition = rectTransform.position;
+
+
+        isDragging = false;
+        baseAnchoredPosition = rectTransform.anchoredPosition;
+        floatStartTime = Time.time;
+    }
+    private void OnEnable()
+    {
+        isDragging = false;
+        isHovered = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -29,6 +49,7 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("begin");
+        isDragging = true;
     }
 
    
@@ -54,14 +75,32 @@ public class TouchController : MonoBehaviour, IPointerDownHandler, IBeginDragHan
             rectTransform.position = originalPosition;
             Debug.Log("Item placed incorrectly. Returning to original position.");
         }
-
+       
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
        
     }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isHovered = true;
+    }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isHovered = false;
+    }
+
+    private void Update()
+    {
+        if (!isHovered && !isDragging)
+        {
+            float elapsedTime = Time.time - floatStartTime;
+            float offsetY = Mathf.Sin(elapsedTime * floatFrequency) * floatAmplitude;
+            rectTransform.anchoredPosition = baseAnchoredPosition + new Vector2(0, offsetY);
+        }
+    }
     public void OnDrop(PointerEventData eventData)
     {
        
