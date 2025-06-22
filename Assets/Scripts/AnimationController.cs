@@ -51,6 +51,9 @@ public class AnimationController : MonoBehaviour
 
     public string GenriceatingAnimation;
 
+
+    private bool isTouchAnimationPlaying = false; // Add this at the top of your script
+
     [System.Serializable]
     public class EatingAnimation
     {
@@ -130,8 +133,9 @@ public class AnimationController : MonoBehaviour
             Debug.Log("Animation: " + animationName);
         }
 
-        PlayIdelAnimation();
+       
 
+        StartCoroutine("PlayIdelAnimation",0f);
     }
     public void StopAllAnimations()
     {
@@ -358,40 +362,44 @@ public class AnimationController : MonoBehaviour
 
     public void PlayIdelAnimation()
     {
-       int CurrentIdelAnimationvalue =  Random.Range(0, idelCharacterAnimation.Count);
+        
 
-        StartCoroutine(PlayIdelAnimationAfterDelay(0.5f, CurrentIdelAnimationvalue));
+        int CurrentIdelAnimationvalue =  Random.Range(0, idelCharacterAnimation.Count);
+        StartCoroutine(PlayIdelAnimationAfterDelay(0.01f, CurrentIdelAnimationvalue));
 
       
     } 
     
     public void PlayTouchAnimation()
     {
+        isTouchAnimationPlaying = true;
         StopAllCoroutines();
         StopCoroutine("PlayIdelAnimationAfterDelay");
-
+        StopCoroutine("PlayTouchAnimationAfterDelay");
+        StopCoroutine("PlayIdelAnimation");
+        StopAllAnimation();
+        StopAllAnimations();
+        CancelInvoke("PlayIdelAnimation");
         string currentAnimationName = skeletonAnimation.AnimationState.GetCurrent(0)?.Animation.Name;
 
-        if (currentAnimationName== "Sleeping_new" || currentAnimationName == "Sleeping_new_v1")
+        if (currentAnimationName == "Sleeping_new" || currentAnimationName == "Sleeping_new_v1")
         {
-
             skeletonAnimation.state.SetAnimation(0, "waking_up", false);
-            PlayIdelAnimation();
-
-        }
+            StartCoroutine("PlayIdelAnimation", 0f);
+            Debug.Log("step-1");
+         }
         else
         {
             int CurrenttouchAnimationvalue = Random.Range(0, specialTouchAnimation.Count);
             StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
-
+           Debug.Log("step-2");
         }
-
-
     }
 
 
     IEnumerator PlayIdelAnimationAfterDelay(float delay, int value)
     {
+        StopAllAnimations();
 
         // Wait for the specified delay
         yield return new WaitForSeconds(delay);
@@ -430,6 +438,9 @@ public class AnimationController : MonoBehaviour
         float animationLength = CurrentTouchAnimation?.Duration ?? 0f; // Duration of the animation in seconds
         Invoke("PlayIdelAnimation", animationLength);
 
+
+        yield return new WaitForSeconds(animationLength);
+        isTouchAnimationPlaying = false;
     }
 
 
@@ -485,7 +496,7 @@ public class AnimationController : MonoBehaviour
 
     public void PlayEatingAnimation()
     {
-        
+       
         //eating -step
         StopAllCoroutines();
         StopCoroutine("PlayIdelAnimationEatingAfterDelay");
