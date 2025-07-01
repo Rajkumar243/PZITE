@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _animationController.skeletonAnimation = Ambu;
     }
 
     // Update is called once per frame

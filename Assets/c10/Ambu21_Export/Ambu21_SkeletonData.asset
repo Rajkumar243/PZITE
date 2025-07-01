@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: Ambu21_1_SkeletonData
+  m_Name: Ambu21_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: e544280709c95764baea03100e5d0f6d, type: 2}
+  - {fileID: 11400000, guid: d5de8434dc8ad5f4385729299c59ba1d, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 83398ad8e674e4140b0681b1cb7f0bc9, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 0ca8ccf222d972b45bb7bb03d3db20f7, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0
@@ -28,4 +28,4 @@ MonoBehaviour:
   toAnimation: []
   duration: []
   defaultMix: 0.2
-  controller: {fileID: 9100000, guid: 30b7f281cf08372499e6b6addd0e2292, type: 2}
+  controller: {fileID: 0}

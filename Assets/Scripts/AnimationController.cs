@@ -11,30 +11,68 @@ public class AnimationController : MonoBehaviour
   
     public List<string> animationNames;
 
-    public List<string> alphabetsAnimationNames;
 
+    public enum Language
+    {
+       
+        English,
+        Arabic,
+        Bengali,
+        kannada,
+        Hindi,
+        Malayalam,
+        Tamil,
+    }
+    [System.Serializable]
+    public class MultiLanguageText
+    {
+        public List<string> Letter;
+        public List<string> Numeric;
+       
+    }
+
+
+    [System.Serializable]
+    public class MultiLanguageAudio
+    {
+        public List<AudioClip> Letter;
+        public List<AudioClip> Numeric;
+       
+    }
+
+    [System.Serializable]
+    public class MultiLanguageAnimation
+    {
+        public List<string> LetterAnimation;
+        public List<string> NumericAnimation;
+
+    }
+
+
+    [System.Serializable]
+    public class AlphabetData
+    {
+        public string animationName; // Animation stays same
+     
+        public MultiLanguageText displayText;
+        public MultiLanguageAudio audioClip;
+        public MultiLanguageAnimation characteranimation;
+    }
+
+    public Language currentLanguage;
+
+
+    //Alphabet
     public TMP_Text alphabetValue;
-
-    public List<AudioClip>  alphabetAudioClips;
     public int CurrentalphabetAudioClipValue;
- 
-
     public int CurrentalphabetValue;
-
     public Animator alphabetAnimation;
-
-    public List<string> alphabetsTexts;
 
 
     //numeric value
-    public List<string> NumberAnimationNames;
     public TMP_Text NumberValue;
-    public List<AudioClip> NumberAudioClips;
     public int CurrentnumberAudioClipValue;
-
-
     public int CurrentNumberValue;
-
     public Animator numberAnimation;
 
     public List<string> numberTexts;
@@ -116,12 +154,19 @@ public class AnimationController : MonoBehaviour
     public List<GameObject> FoodObjects;
     public List<GameObject> AlphabetObjects;
 
+    public List<AlphabetData> alphabets;
 
+    public void ChangeLanguage(int languageIndex)
+    {
+        currentLanguage = (Language)languageIndex;
+        Debug.Log("Language Changed To: " + currentLanguage.ToString());
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         _audiosource = this.GetComponent<AudioSource>();
+        ChangeLanguage(0);//English
 
 
         // Collect all animations from the SkeletonAnimation's SkeletonData
@@ -189,8 +234,10 @@ public class AnimationController : MonoBehaviour
 
     } 
     
+
     public void PlayNumberAnimation()
     {
+
 
         StopAllCoroutines();
         numberAnimation.Rebind();
@@ -198,18 +245,20 @@ public class AnimationController : MonoBehaviour
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
 
     }
+
+
     //alphabets
     public void OnNextAlphabet()
     {
 
-        if (CurrentalphabetValue < alphabetsAnimationNames.Count - 1)
+        if (CurrentalphabetValue <alphabets[(int)currentLanguage].displayText.Letter.Count - 1)
         {
             CurrentalphabetValue++;
             CurrentalphabetAudioClipValue++;
         }
         else
         {
-            CurrentalphabetValue = 0;
+            CurrentalphabetValue =0;
             CurrentalphabetAudioClipValue = 0;
         }
 
@@ -217,12 +266,12 @@ public class AnimationController : MonoBehaviour
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
         alphabetAnimation.Rebind();
         alphabetAnimation.Play("Start");
-        alphabetValue.text = alphabetsTexts[CurrentalphabetValue];
+        alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
     }
 
     public void OnPreviousAlphabet()
     {
-        if (CurrentalphabetValue > 0 && CurrentalphabetValue <= alphabetsAnimationNames.Count - 1)
+        if (CurrentalphabetValue > 0 && CurrentalphabetValue <=alphabets[(int)currentLanguage].displayText.Letter.Count - 1)
         {
             CurrentalphabetValue--;
             CurrentalphabetAudioClipValue--;
@@ -236,10 +285,11 @@ public class AnimationController : MonoBehaviour
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
         alphabetAnimation.Rebind();
         alphabetAnimation.Play("Start");
-        alphabetValue.text = alphabetsTexts[CurrentalphabetValue];
+        alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
 
-       
-    
+        
+
+
     }
 
 
@@ -248,7 +298,7 @@ public class AnimationController : MonoBehaviour
     public void OnNextNumber()
     {
 
-        if (CurrentNumberValue < NumberAnimationNames.Count - 1)
+        if (CurrentNumberValue <alphabets[(int)currentLanguage].displayText.Numeric.Count - 1)
         {
             CurrentNumberValue++;
             CurrentnumberAudioClipValue++;
@@ -263,12 +313,12 @@ public class AnimationController : MonoBehaviour
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
         numberAnimation.Rebind();
         numberAnimation.Play("Start");
-        NumberValue.text = numberTexts[CurrentNumberValue];
+        NumberValue.text =alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
     }
 
     public void OnPreviousNumber()
     {
-        if (CurrentNumberValue > 0 && CurrentNumberValue <= NumberAnimationNames.Count - 1)
+        if (CurrentNumberValue > 0 && CurrentNumberValue <=alphabets[(int)currentLanguage].displayText.Numeric.Count - 1)
         {
             CurrentNumberValue--;
             CurrentnumberAudioClipValue--;
@@ -282,10 +332,10 @@ public class AnimationController : MonoBehaviour
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
         numberAnimation.Rebind();
         numberAnimation.Play("Start");
-        NumberValue.text = numberTexts[CurrentNumberValue];
+        NumberValue.text =alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
 
 
-
+        
     }
     //numbers
 
@@ -296,10 +346,10 @@ public class AnimationController : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Play the animation after the delay
-        skeletonAnimation.state.SetAnimation(0, alphabetsAnimationNames[value], false);
-        Debug.Log(alphabetsAnimationNames[value]);
+        skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value], false);
+        Debug.Log(alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value]);
         //voice 
-        _audiosource.clip = alphabetAudioClips[CurrentalphabetAudioClipValue];
+        _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Letter[CurrentalphabetAudioClipValue];
         _audiosource.Play();
     }
     
@@ -310,10 +360,10 @@ public class AnimationController : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Play the animation after the delay
-        skeletonAnimation.state.SetAnimation(0, NumberAnimationNames[value], false);
-        Debug.Log(NumberAnimationNames[value]);
+        skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.NumericAnimation[value], false);
+        Debug.Log(alphabets[(int)currentLanguage].characteranimation.NumericAnimation[value]);
         //voice 
-        _audiosource.clip = NumberAudioClips[CurrentnumberAudioClipValue];
+        _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Numeric[CurrentnumberAudioClipValue];
         _audiosource.Play();
     }
 

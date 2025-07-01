@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ambu21_1_Material
+  m_Name: Ammu_Material
   m_Shader: {fileID: 4800000, guid: 1e8a610c9e01c3648bac42585e5fc676, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -22,19 +22,17 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a638294e27e8d2f498327b67364da564, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2bcb5fa4a33519e4babced9cbace6837, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0
-    - _DoubleSidedLighting: 0
-    - _LightAffectsAdditive: 0
+    - _Cutoff: 0.1
     - _OutlineMipLevel: 0
     - _OutlineOpaqueAlpha: 1
     - _OutlineReferenceTexWidth: 1024
     - _OutlineSmoothness: 1
-    - _OutlineWidth: 0
+    - _OutlineWidth: 3
     - _StencilComp: 8
     - _StencilRef: 1
     - _StraightAlphaInput: 0

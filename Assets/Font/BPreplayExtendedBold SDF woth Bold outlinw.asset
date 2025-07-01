@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: BPreplayExtendedBold SDF
+  m_Name: BPreplayExtendedBold SDF woth Bold outlinw
   m_EditorClassIdentifier: 
-  hashCode: 1464279762
+  hashCode: -376051423
   material: {fileID: 6098576539282327867}
-  materialHashCode: 1843357362
+  materialHashCode: 396266593
   m_Version: 1.1.0
   m_SourceFontFileGUID: db910610a242c4828beaba6c0e8ec613
-  m_SourceFontFile_EditorRef: {fileID: 0}
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: db910610a242c4828beaba6c0e8ec613, type: 3}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
   m_FaceInfo:
