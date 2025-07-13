@@ -2248,7 +2248,7 @@ GameObject:
   - component: {fileID: 158663604}
   - component: {fileID: 158663603}
   m_Layer: 5
-  m_Name: AlphabetsText (TMP)
+  m_Name: English-AlphabetsText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8627,7 +8627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 109.76921, y: -50}
+  m_AnchoredPosition: {x: 101.63728, y: -50}
   m_SizeDelta: {x: 119, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248904893
@@ -10808,7 +10808,7 @@ GameObject:
   - component: {fileID: 450643470}
   - component: {fileID: 450643469}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Number-Button-Ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17205,6 +17205,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 345085449}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &919870777
 GameObject:
@@ -26881,7 +26893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 409.84607, y: -50}
+  m_AnchoredPosition: {x: 369.1864, y: -50}
   m_SizeDelta: {x: 119, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317455822
@@ -34970,7 +34982,7 @@ MonoBehaviour:
   m_Content: {fileID: 1311774071}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 0
+  m_MovementType: 2
   m_Elasticity: 0.3
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -37636,7 +37648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d5feb2e7acd7c4ba994f876720c267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonAnimation: {fileID: 1999570288}
+  skeletonAnimation: {fileID: 1577822346}
   _audiosource: {fileID: 1698471037}
   animationNames:
   - 1
@@ -37720,6 +37732,24 @@ MonoBehaviour:
   - Thinking
   - waking_up
   - Wow_3
+  LanguagesTexts:
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  - {fileID: 11400000, guid: dfc136fb6e9afde4180ba103f8db05b2, type: 2}
+  - {fileID: 11400000, guid: 19f3ccd65f8279d4e814b5e405f93fdf, type: 2}
+  - {fileID: 11400000, guid: 1827259ceb0475a49b0e15df643b787e, type: 2}
+  - {fileID: 11400000, guid: 97ab87446c1782d499393b1378beae36, type: 2}
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  NumberTexts:
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  - {fileID: 11400000, guid: dfc136fb6e9afde4180ba103f8db05b2, type: 2}
+  - {fileID: 11400000, guid: 19f3ccd65f8279d4e814b5e405f93fdf, type: 2}
+  - {fileID: 11400000, guid: 1827259ceb0475a49b0e15df643b787e, type: 2}
+  - {fileID: 11400000, guid: 97ab87446c1782d499393b1378beae36, type: 2}
+  - {fileID: 11400000, guid: 695e146f7dfadcb4dacb3e12784a5086, type: 2}
+  LetterButtonText: {fileID: 7907206493484279342}
+  NumberButtonText: {fileID: 450643469}
   currentLanguage: 0
   alphabetValue: {fileID: 158663603}
   CurrentalphabetAudioClipValue: 0
@@ -38008,183 +38038,27 @@ MonoBehaviour:
       - English_18
       - English_19
       - English_20
-  - animationName: Hindi
-    displayText:
-      Letter:
-      - A
-      - B
-      - C
-      - D
-      - E
-      - F
-      - G
-      - H
-      - I
-      - J
-      - K
-      - L
-      - M
-      - N
-      - O
-      - P
-      - Q
-      - R
-      - S
-      - T
-      - U
-      - V
-      - W
-      - X
-      - Y
-      - Z
-      Numeric:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
-      - 13
-      - 14
-      - 15
-      - 16
-      - 17
-      - 18
-      - 19
-      - 20
-    audioClip:
-      Letter:
-      - {fileID: 8300000, guid: e9278e67323a5e34987d9ac09fdf00c2, type: 3}
-      - {fileID: 8300000, guid: cfcc7df5afb46104b9a89e829a1c61bf, type: 3}
-      - {fileID: 8300000, guid: 0c18355350127ec418822261239738a1, type: 3}
-      - {fileID: 8300000, guid: d7aa918bdf0871b47962ae899f49eae6, type: 3}
-      - {fileID: 8300000, guid: 088cd8f4a5bb6af4ea05dcaa5e4e56a3, type: 3}
-      - {fileID: 8300000, guid: 8c9fa64c98bbbf64fb28461b313d55ec, type: 3}
-      - {fileID: 8300000, guid: 53a8305e366e117479aecd301273cfff, type: 3}
-      - {fileID: 8300000, guid: 98027e91add119c4288cceae72dfd522, type: 3}
-      - {fileID: 8300000, guid: a30dd66d083830f468764614ad0dfa61, type: 3}
-      - {fileID: 8300000, guid: faf2ec50d1d80a542a633f8ba13369fa, type: 3}
-      - {fileID: 8300000, guid: a8c2b65d4430fa04d9ea5b60ed779efe, type: 3}
-      - {fileID: 8300000, guid: 8d6749f19dfcee349a60a7641f00fafe, type: 3}
-      - {fileID: 8300000, guid: 029508ac3d4103a42a9d9dc9c634a6c7, type: 3}
-      - {fileID: 8300000, guid: 782f14a955cd224499886c9ed140ef78, type: 3}
-      - {fileID: 8300000, guid: 738c4a4cf35e2e34b816c55dc3c222f1, type: 3}
-      - {fileID: 8300000, guid: 67bef3e5194ca5a488d1c82e86600b99, type: 3}
-      - {fileID: 8300000, guid: abbc632c15efe094bb1737d189d8f29b, type: 3}
-      - {fileID: 8300000, guid: ae14282a9ee4f474db545f13ae29c47e, type: 3}
-      - {fileID: 8300000, guid: 0b007f99bc524614c9a6977ab07a58ee, type: 3}
-      - {fileID: 8300000, guid: 7b2a2de19c0063d478ddd489155dbcca, type: 3}
-      - {fileID: 8300000, guid: a988625789a4e63418f7feb83b638f7a, type: 3}
-      - {fileID: 8300000, guid: 8af9b234b0b8b074295971c52010c3a7, type: 3}
-      - {fileID: 8300000, guid: 241be46a3f3a58c4f83a03b8d40ee2b4, type: 3}
-      - {fileID: 8300000, guid: 88d242037414cc34caf583503cac39a4, type: 3}
-      - {fileID: 8300000, guid: 1d8e312c8b2904b429ec547c4ee61acd, type: 3}
-      - {fileID: 8300000, guid: f410fc68c915b6a43972e2692e562c54, type: 3}
-      Numeric:
-      - {fileID: 8300000, guid: 8c2ab2c29a1558841aa26dcb376977b2, type: 3}
-      - {fileID: 8300000, guid: 63ffa8ceec2c7c74897daece8b9d058d, type: 3}
-      - {fileID: 8300000, guid: 7cd0e7955cd8277449cad182faee3c9d, type: 3}
-      - {fileID: 8300000, guid: 3c3ac0cd454ff36438c0445ad739b2a0, type: 3}
-      - {fileID: 8300000, guid: 54686bf998422254aa86f1490d8a44a4, type: 3}
-      - {fileID: 8300000, guid: 1151da6754c82c842b19196d526f4fe9, type: 3}
-      - {fileID: 8300000, guid: 0cdfec4fbed40e14c9dea2fa7fe5e200, type: 3}
-      - {fileID: 8300000, guid: 737c921038d1894499bab90113e03293, type: 3}
-      - {fileID: 8300000, guid: 230161895674e2f408f4c923943e41c2, type: 3}
-      - {fileID: 8300000, guid: e14c7100ebfe13d4fa9b2c8d9f86e665, type: 3}
-      - {fileID: 8300000, guid: 322ee1ad2088d1f4489a288ae25c46f9, type: 3}
-      - {fileID: 8300000, guid: 3b6d7666d2588484fad2bdb039649feb, type: 3}
-      - {fileID: 8300000, guid: a25fb948626b72644b9a0a936a5a0ce3, type: 3}
-      - {fileID: 8300000, guid: 7f058ab5196e6d74fbec28dddd1cad33, type: 3}
-      - {fileID: 8300000, guid: ebcbef15888d4454f955908538a1496a, type: 3}
-      - {fileID: 8300000, guid: 2785d2e65dd45024282e2d9760ea6268, type: 3}
-      - {fileID: 8300000, guid: 48b0650416fe3384eab8b0552d59a3e7, type: 3}
-      - {fileID: 8300000, guid: 153423e03fdeefa42b7b2e1924a7b561, type: 3}
-      - {fileID: 8300000, guid: 73ba1e9e0e00d5747acc9c70ce67a1dd, type: 3}
-      - {fileID: 8300000, guid: bbc65109394e55b469b3b24a1ed7ca8e, type: 3}
-    characteranimation:
-      LetterAnimation:
-      - Hindi_Letter_A
-      - Hindi_Letter_B
-      - Hindi_Letter_C
-      - Hindi_Letter_D
-      - Hindi_Letter_E
-      - Hindi_Letter_F
-      - Hindi_Letter_G
-      - Hindi_Letter_H
-      - Hindi_Letter_I
-      - Hindi_Letter_J
-      - Hindi_Letter_K
-      - Hindi_Letter_L
-      - Hindi_Letter_M
-      - Hindi_Letter_N
-      - Hindi_Letter_O
-      - Hindi_Letter_P
-      - Hindi_Letter_Q
-      - Hindi_Letter_R
-      - Hindi_Letter_S
-      - Hindi_Letter_T
-      - Hindi_Letter_U
-      - Hindi_Letter_V
-      - Hindi_Letter_W
-      - Hindi_Letter_X
-      - Hindi_Letter_Y
-      - Hindi_Letter_Z
-      NumericAnimation:
-      - Hindi_1
-      - Hindi_2
-      - Hindi_3
-      - Hindi_4
-      - Hindi_5
-      - Hindi_6
-      - Hindi_7
-      - Hindi_8
-      - Hindi_9
-      - Hindi_10
-      - Hindi_11
-      - Hindi_12
-      - Hindi_13
-      - Hindi_14
-      - Hindi_15
-      - Hindi_16
-      - Hindi_17
-      - Hinid_18
-      - Hindi_19
-      - Hindi_20
   - animationName: Malayalam
     displayText:
       Letter:
-      - A
-      - B
-      - C
-      - D
-      - E
-      - F
-      - G
-      - H
-      - I
-      - J
-      - K
-      - L
-      - M
-      - N
-      - O
-      - P
-      - Q
-      - R
-      - S
-      - T
-      - U
-      - V
-      - W
-      - X
-      - Y
-      - Z
+      - "\u0D05"
+      - "\u0D06"
+      - "\u0D07"
+      - "\u0D08"
+      - "\u0D09"
+      - "\u0D0A"
+      - "\u0D0B"
+      - "\u0D60"
+      - "\u0D0C"
+      - "\u0D61"
+      - "\u0D0E"
+      - "\u0D0F"
+      - "\u0D10"
+      - "\u0D12"
+      - "\u0D13"
+      - "\u0D14"
+      - "\u0D05\u0D02"
+      - "\u0D05\u0D03"
       Numeric:
       - 1
       - 2
@@ -38293,35 +38167,143 @@ MonoBehaviour:
       - Malayalam_18
       - Malayalam_19
       - Malayalam_20
+  - animationName: Hindi
+    displayText:
+      Letter:
+      - "\u0905"
+      - "\u0906"
+      - "\u0907"
+      - "\u0908"
+      - "\u0909"
+      - "\u090A"
+      - "\u090B"
+      - "\u090F"
+      - "\u0910"
+      - "\u0913"
+      - "\u0914"
+      - "\u0905\u0902"
+      - "\u0905\u0903"
+      Numeric:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+    audioClip:
+      Letter:
+      - {fileID: 8300000, guid: e9278e67323a5e34987d9ac09fdf00c2, type: 3}
+      - {fileID: 8300000, guid: cfcc7df5afb46104b9a89e829a1c61bf, type: 3}
+      - {fileID: 8300000, guid: 0c18355350127ec418822261239738a1, type: 3}
+      - {fileID: 8300000, guid: d7aa918bdf0871b47962ae899f49eae6, type: 3}
+      - {fileID: 8300000, guid: 088cd8f4a5bb6af4ea05dcaa5e4e56a3, type: 3}
+      - {fileID: 8300000, guid: 8c9fa64c98bbbf64fb28461b313d55ec, type: 3}
+      - {fileID: 8300000, guid: 53a8305e366e117479aecd301273cfff, type: 3}
+      - {fileID: 8300000, guid: 98027e91add119c4288cceae72dfd522, type: 3}
+      - {fileID: 8300000, guid: a30dd66d083830f468764614ad0dfa61, type: 3}
+      - {fileID: 8300000, guid: faf2ec50d1d80a542a633f8ba13369fa, type: 3}
+      - {fileID: 8300000, guid: a8c2b65d4430fa04d9ea5b60ed779efe, type: 3}
+      - {fileID: 8300000, guid: 8d6749f19dfcee349a60a7641f00fafe, type: 3}
+      - {fileID: 8300000, guid: 029508ac3d4103a42a9d9dc9c634a6c7, type: 3}
+      - {fileID: 8300000, guid: 782f14a955cd224499886c9ed140ef78, type: 3}
+      - {fileID: 8300000, guid: 738c4a4cf35e2e34b816c55dc3c222f1, type: 3}
+      - {fileID: 8300000, guid: 67bef3e5194ca5a488d1c82e86600b99, type: 3}
+      - {fileID: 8300000, guid: abbc632c15efe094bb1737d189d8f29b, type: 3}
+      - {fileID: 8300000, guid: ae14282a9ee4f474db545f13ae29c47e, type: 3}
+      - {fileID: 8300000, guid: 0b007f99bc524614c9a6977ab07a58ee, type: 3}
+      - {fileID: 8300000, guid: 7b2a2de19c0063d478ddd489155dbcca, type: 3}
+      - {fileID: 8300000, guid: a988625789a4e63418f7feb83b638f7a, type: 3}
+      - {fileID: 8300000, guid: 8af9b234b0b8b074295971c52010c3a7, type: 3}
+      - {fileID: 8300000, guid: 241be46a3f3a58c4f83a03b8d40ee2b4, type: 3}
+      - {fileID: 8300000, guid: 88d242037414cc34caf583503cac39a4, type: 3}
+      - {fileID: 8300000, guid: 1d8e312c8b2904b429ec547c4ee61acd, type: 3}
+      - {fileID: 8300000, guid: f410fc68c915b6a43972e2692e562c54, type: 3}
+      Numeric:
+      - {fileID: 8300000, guid: 8c2ab2c29a1558841aa26dcb376977b2, type: 3}
+      - {fileID: 8300000, guid: 63ffa8ceec2c7c74897daece8b9d058d, type: 3}
+      - {fileID: 8300000, guid: 7cd0e7955cd8277449cad182faee3c9d, type: 3}
+      - {fileID: 8300000, guid: 3c3ac0cd454ff36438c0445ad739b2a0, type: 3}
+      - {fileID: 8300000, guid: 54686bf998422254aa86f1490d8a44a4, type: 3}
+      - {fileID: 8300000, guid: 1151da6754c82c842b19196d526f4fe9, type: 3}
+      - {fileID: 8300000, guid: 0cdfec4fbed40e14c9dea2fa7fe5e200, type: 3}
+      - {fileID: 8300000, guid: 737c921038d1894499bab90113e03293, type: 3}
+      - {fileID: 8300000, guid: 230161895674e2f408f4c923943e41c2, type: 3}
+      - {fileID: 8300000, guid: e14c7100ebfe13d4fa9b2c8d9f86e665, type: 3}
+      - {fileID: 8300000, guid: 322ee1ad2088d1f4489a288ae25c46f9, type: 3}
+      - {fileID: 8300000, guid: 3b6d7666d2588484fad2bdb039649feb, type: 3}
+      - {fileID: 8300000, guid: a25fb948626b72644b9a0a936a5a0ce3, type: 3}
+      - {fileID: 8300000, guid: 7f058ab5196e6d74fbec28dddd1cad33, type: 3}
+      - {fileID: 8300000, guid: ebcbef15888d4454f955908538a1496a, type: 3}
+      - {fileID: 8300000, guid: 2785d2e65dd45024282e2d9760ea6268, type: 3}
+      - {fileID: 8300000, guid: 48b0650416fe3384eab8b0552d59a3e7, type: 3}
+      - {fileID: 8300000, guid: 153423e03fdeefa42b7b2e1924a7b561, type: 3}
+      - {fileID: 8300000, guid: 73ba1e9e0e00d5747acc9c70ce67a1dd, type: 3}
+      - {fileID: 8300000, guid: bbc65109394e55b469b3b24a1ed7ca8e, type: 3}
+    characteranimation:
+      LetterAnimation:
+      - Hindi_Letter_1
+      - Hindi_Letter_2
+      - Hindi_Letter_3
+      - Hindi_Letter_4
+      - Hindi_Letter_5
+      - Hindi_Letter_6
+      - Hindi_Letter_7
+      - Hindi_Letter_8
+      - Hindi_Letter_9
+      - Hindi_Letter_10
+      - Hindi_Letter_11
+      - Hindi_Letter_12
+      - Hindi_Letter_13
+      NumericAnimation:
+      - Hindi_1
+      - Hindi_2
+      - Hindi_3
+      - Hindi_4
+      - Hindi_5
+      - Hindi_6
+      - Hindi_7
+      - Hindi_8
+      - Hindi_9
+      - Hindi_10
+      - Hindi_11
+      - Hindi_12
+      - Hindi_13
+      - Hindi_14
+      - Hindi_15
+      - Hindi_16
+      - Hindi_17
+      - Hinid_18
+      - Hindi_19
+      - Hindi_20
   - animationName: Tamil
     displayText:
       Letter:
-      - A
-      - B
-      - C
-      - D
-      - E
-      - F
-      - G
-      - H
-      - I
-      - J
-      - K
-      - L
-      - M
-      - N
-      - O
-      - P
-      - Q
-      - R
-      - S
-      - T
-      - U
-      - V
-      - W
-      - X
-      - Y
-      - Z
+      - "\u0B85"
+      - "\u0B86"
+      - "\u0B87"
+      - "\u0B88"
+      - "\u0B89"
+      - "\u0B8A"
+      - "\u0B8E"
+      - "\u0B8F"
+      - "\u0B90"
+      - "\u0B92"
+      - "\u0B93"
+      - "\u0B94"
       Numeric:
       - 1
       - 2
@@ -38427,140 +38409,6 @@ MonoBehaviour:
       - Tamil_18
       - Tamil_19
       - Tamil_20
-  - animationName: Bengali
-    displayText:
-      Letter:
-      - A
-      - B
-      - C
-      - D
-      - E
-      - F
-      - G
-      - H
-      - I
-      - J
-      - K
-      - L
-      - M
-      - N
-      - O
-      - P
-      - Q
-      - R
-      - S
-      - T
-      - U
-      - V
-      - W
-      - X
-      - Y
-      - Z
-      Numeric:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
-      - 13
-      - 14
-      - 15
-      - 16
-      - 17
-      - 18
-      - 19
-      - 20
-    audioClip:
-      Letter:
-      - {fileID: 8300000, guid: e9278e67323a5e34987d9ac09fdf00c2, type: 3}
-      - {fileID: 8300000, guid: cfcc7df5afb46104b9a89e829a1c61bf, type: 3}
-      - {fileID: 8300000, guid: 0c18355350127ec418822261239738a1, type: 3}
-      - {fileID: 8300000, guid: d7aa918bdf0871b47962ae899f49eae6, type: 3}
-      - {fileID: 8300000, guid: 088cd8f4a5bb6af4ea05dcaa5e4e56a3, type: 3}
-      - {fileID: 8300000, guid: 8c9fa64c98bbbf64fb28461b313d55ec, type: 3}
-      - {fileID: 8300000, guid: 53a8305e366e117479aecd301273cfff, type: 3}
-      - {fileID: 8300000, guid: 98027e91add119c4288cceae72dfd522, type: 3}
-      - {fileID: 8300000, guid: a30dd66d083830f468764614ad0dfa61, type: 3}
-      - {fileID: 8300000, guid: faf2ec50d1d80a542a633f8ba13369fa, type: 3}
-      - {fileID: 8300000, guid: a8c2b65d4430fa04d9ea5b60ed779efe, type: 3}
-      - {fileID: 8300000, guid: 8d6749f19dfcee349a60a7641f00fafe, type: 3}
-      - {fileID: 8300000, guid: 029508ac3d4103a42a9d9dc9c634a6c7, type: 3}
-      - {fileID: 8300000, guid: 782f14a955cd224499886c9ed140ef78, type: 3}
-      - {fileID: 8300000, guid: 738c4a4cf35e2e34b816c55dc3c222f1, type: 3}
-      - {fileID: 8300000, guid: 67bef3e5194ca5a488d1c82e86600b99, type: 3}
-      - {fileID: 8300000, guid: abbc632c15efe094bb1737d189d8f29b, type: 3}
-      - {fileID: 8300000, guid: ae14282a9ee4f474db545f13ae29c47e, type: 3}
-      - {fileID: 8300000, guid: 0b007f99bc524614c9a6977ab07a58ee, type: 3}
-      - {fileID: 8300000, guid: 7b2a2de19c0063d478ddd489155dbcca, type: 3}
-      - {fileID: 8300000, guid: a988625789a4e63418f7feb83b638f7a, type: 3}
-      - {fileID: 8300000, guid: 8af9b234b0b8b074295971c52010c3a7, type: 3}
-      - {fileID: 8300000, guid: 241be46a3f3a58c4f83a03b8d40ee2b4, type: 3}
-      - {fileID: 8300000, guid: 88d242037414cc34caf583503cac39a4, type: 3}
-      - {fileID: 8300000, guid: 1d8e312c8b2904b429ec547c4ee61acd, type: 3}
-      - {fileID: 8300000, guid: f410fc68c915b6a43972e2692e562c54, type: 3}
-      Numeric:
-      - {fileID: 8300000, guid: 8c2ab2c29a1558841aa26dcb376977b2, type: 3}
-      - {fileID: 8300000, guid: 63ffa8ceec2c7c74897daece8b9d058d, type: 3}
-      - {fileID: 8300000, guid: 7cd0e7955cd8277449cad182faee3c9d, type: 3}
-      - {fileID: 8300000, guid: 3c3ac0cd454ff36438c0445ad739b2a0, type: 3}
-      - {fileID: 8300000, guid: 54686bf998422254aa86f1490d8a44a4, type: 3}
-      - {fileID: 8300000, guid: 1151da6754c82c842b19196d526f4fe9, type: 3}
-      - {fileID: 8300000, guid: 0cdfec4fbed40e14c9dea2fa7fe5e200, type: 3}
-      - {fileID: 8300000, guid: 737c921038d1894499bab90113e03293, type: 3}
-      - {fileID: 8300000, guid: 230161895674e2f408f4c923943e41c2, type: 3}
-      - {fileID: 8300000, guid: e14c7100ebfe13d4fa9b2c8d9f86e665, type: 3}
-      - {fileID: 8300000, guid: 322ee1ad2088d1f4489a288ae25c46f9, type: 3}
-      - {fileID: 8300000, guid: 3b6d7666d2588484fad2bdb039649feb, type: 3}
-      - {fileID: 8300000, guid: a25fb948626b72644b9a0a936a5a0ce3, type: 3}
-      - {fileID: 8300000, guid: 7f058ab5196e6d74fbec28dddd1cad33, type: 3}
-      - {fileID: 8300000, guid: ebcbef15888d4454f955908538a1496a, type: 3}
-      - {fileID: 8300000, guid: 2785d2e65dd45024282e2d9760ea6268, type: 3}
-      - {fileID: 8300000, guid: 48b0650416fe3384eab8b0552d59a3e7, type: 3}
-      - {fileID: 8300000, guid: 153423e03fdeefa42b7b2e1924a7b561, type: 3}
-      - {fileID: 8300000, guid: 73ba1e9e0e00d5747acc9c70ce67a1dd, type: 3}
-      - {fileID: 8300000, guid: bbc65109394e55b469b3b24a1ed7ca8e, type: 3}
-    characteranimation:
-      LetterAnimation:
-      - Bengali_letter_1
-      - Bengali_letter_2
-      - Bengali_letter_3
-      - Bengali_letter_4
-      - Bengali_letter_5
-      - Bengali_letter_6
-      - Bengali_letter_7
-      - Bengali_letter_8
-      - Bengali_letter_9
-      - Bengali_letter_10
-      - Bengali_letter_11
-      - Bengali_letter_12
-      NumericAnimation:
-      - Bengali_1
-      - Bengali_2
-      - Bengali_3
-      - Bengali_4
-      - Bengali_5
-      - Bengali_6
-      - Bengali_7
-      - Bengali_8
-      - Bengali_9
-      - Bengali_10
-      - Bengali_11
-      - Bengali_12
-      - Bengali_13
-      - Bengali_14
-      - Bengali_15
-      - Bengali_16
-      - Bengali_17
-      - Bengali_18
-      - Bengali_19
-      - Bengali_20
   - animationName: Arabic
     displayText:
       Letter:
@@ -38711,6 +38559,140 @@ MonoBehaviour:
       - Arabic_18
       - Arabic_19
       - Arabic_20
+  - animationName: Bengali
+    displayText:
+      Letter:
+      - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+      Numeric:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+    audioClip:
+      Letter:
+      - {fileID: 8300000, guid: e9278e67323a5e34987d9ac09fdf00c2, type: 3}
+      - {fileID: 8300000, guid: cfcc7df5afb46104b9a89e829a1c61bf, type: 3}
+      - {fileID: 8300000, guid: 0c18355350127ec418822261239738a1, type: 3}
+      - {fileID: 8300000, guid: d7aa918bdf0871b47962ae899f49eae6, type: 3}
+      - {fileID: 8300000, guid: 088cd8f4a5bb6af4ea05dcaa5e4e56a3, type: 3}
+      - {fileID: 8300000, guid: 8c9fa64c98bbbf64fb28461b313d55ec, type: 3}
+      - {fileID: 8300000, guid: 53a8305e366e117479aecd301273cfff, type: 3}
+      - {fileID: 8300000, guid: 98027e91add119c4288cceae72dfd522, type: 3}
+      - {fileID: 8300000, guid: a30dd66d083830f468764614ad0dfa61, type: 3}
+      - {fileID: 8300000, guid: faf2ec50d1d80a542a633f8ba13369fa, type: 3}
+      - {fileID: 8300000, guid: a8c2b65d4430fa04d9ea5b60ed779efe, type: 3}
+      - {fileID: 8300000, guid: 8d6749f19dfcee349a60a7641f00fafe, type: 3}
+      - {fileID: 8300000, guid: 029508ac3d4103a42a9d9dc9c634a6c7, type: 3}
+      - {fileID: 8300000, guid: 782f14a955cd224499886c9ed140ef78, type: 3}
+      - {fileID: 8300000, guid: 738c4a4cf35e2e34b816c55dc3c222f1, type: 3}
+      - {fileID: 8300000, guid: 67bef3e5194ca5a488d1c82e86600b99, type: 3}
+      - {fileID: 8300000, guid: abbc632c15efe094bb1737d189d8f29b, type: 3}
+      - {fileID: 8300000, guid: ae14282a9ee4f474db545f13ae29c47e, type: 3}
+      - {fileID: 8300000, guid: 0b007f99bc524614c9a6977ab07a58ee, type: 3}
+      - {fileID: 8300000, guid: 7b2a2de19c0063d478ddd489155dbcca, type: 3}
+      - {fileID: 8300000, guid: a988625789a4e63418f7feb83b638f7a, type: 3}
+      - {fileID: 8300000, guid: 8af9b234b0b8b074295971c52010c3a7, type: 3}
+      - {fileID: 8300000, guid: 241be46a3f3a58c4f83a03b8d40ee2b4, type: 3}
+      - {fileID: 8300000, guid: 88d242037414cc34caf583503cac39a4, type: 3}
+      - {fileID: 8300000, guid: 1d8e312c8b2904b429ec547c4ee61acd, type: 3}
+      - {fileID: 8300000, guid: f410fc68c915b6a43972e2692e562c54, type: 3}
+      Numeric:
+      - {fileID: 8300000, guid: 8c2ab2c29a1558841aa26dcb376977b2, type: 3}
+      - {fileID: 8300000, guid: 63ffa8ceec2c7c74897daece8b9d058d, type: 3}
+      - {fileID: 8300000, guid: 7cd0e7955cd8277449cad182faee3c9d, type: 3}
+      - {fileID: 8300000, guid: 3c3ac0cd454ff36438c0445ad739b2a0, type: 3}
+      - {fileID: 8300000, guid: 54686bf998422254aa86f1490d8a44a4, type: 3}
+      - {fileID: 8300000, guid: 1151da6754c82c842b19196d526f4fe9, type: 3}
+      - {fileID: 8300000, guid: 0cdfec4fbed40e14c9dea2fa7fe5e200, type: 3}
+      - {fileID: 8300000, guid: 737c921038d1894499bab90113e03293, type: 3}
+      - {fileID: 8300000, guid: 230161895674e2f408f4c923943e41c2, type: 3}
+      - {fileID: 8300000, guid: e14c7100ebfe13d4fa9b2c8d9f86e665, type: 3}
+      - {fileID: 8300000, guid: 322ee1ad2088d1f4489a288ae25c46f9, type: 3}
+      - {fileID: 8300000, guid: 3b6d7666d2588484fad2bdb039649feb, type: 3}
+      - {fileID: 8300000, guid: a25fb948626b72644b9a0a936a5a0ce3, type: 3}
+      - {fileID: 8300000, guid: 7f058ab5196e6d74fbec28dddd1cad33, type: 3}
+      - {fileID: 8300000, guid: ebcbef15888d4454f955908538a1496a, type: 3}
+      - {fileID: 8300000, guid: 2785d2e65dd45024282e2d9760ea6268, type: 3}
+      - {fileID: 8300000, guid: 48b0650416fe3384eab8b0552d59a3e7, type: 3}
+      - {fileID: 8300000, guid: 153423e03fdeefa42b7b2e1924a7b561, type: 3}
+      - {fileID: 8300000, guid: 73ba1e9e0e00d5747acc9c70ce67a1dd, type: 3}
+      - {fileID: 8300000, guid: bbc65109394e55b469b3b24a1ed7ca8e, type: 3}
+    characteranimation:
+      LetterAnimation:
+      - Bengali_letter_1
+      - Bengali_letter_2
+      - Bengali_letter_3
+      - Bengali_letter_4
+      - Bengali_letter_5
+      - Bengali_letter_6
+      - Bengali_letter_7
+      - Bengali_letter_8
+      - Bengali_letter_9
+      - Bengali_letter_10
+      - Bengali_letter_11
+      - Bengali_letter_12
+      NumericAnimation:
+      - Bengali_1
+      - Bengali_2
+      - Bengali_3
+      - Bengali_4
+      - Bengali_5
+      - Bengali_6
+      - Bengali_7
+      - Bengali_8
+      - Bengali_9
+      - Bengali_10
+      - Bengali_11
+      - Bengali_12
+      - Bengali_13
+      - Bengali_14
+      - Bengali_15
+      - Bengali_16
+      - Bengali_17
+      - Bengali_18
+      - Bengali_19
+      - Bengali_20
 --- !u!4 &1698471036
 Transform:
   m_ObjectHideFlags: 0
@@ -41044,7 +41026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 259.80762, y: -50}
+  m_AnchoredPosition: {x: 235.41185, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1957542375
@@ -49108,7 +49090,7 @@ GameObject:
   - component: {fileID: 1238920088183139016}
   - component: {fileID: 7907206493484279342}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Letter-Button-Ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

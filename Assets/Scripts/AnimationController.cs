@@ -12,16 +12,19 @@ public class AnimationController : MonoBehaviour
     public List<string> animationNames;
 
 
+    public List<TMP_FontAsset> LanguagesTexts;
+    public List<TMP_FontAsset> NumberTexts;
+
     public enum Language
     {
-       
-        English,
-        Arabic,
         Bengali,
-        kannada,
-        Hindi,
+        English,
         Malayalam,
+        Hindi,
         Tamil,
+        Arabic,
+        kannada,
+
     }
     [System.Serializable]
     public class MultiLanguageText
@@ -58,6 +61,9 @@ public class AnimationController : MonoBehaviour
         public MultiLanguageAudio audioClip;
         public MultiLanguageAnimation characteranimation;
     }
+
+    public TMP_Text LetterButtonText;
+    public TMP_Text NumberButtonText;
 
     public Language currentLanguage;
 
@@ -159,7 +165,24 @@ public class AnimationController : MonoBehaviour
     public void ChangeLanguage(int languageIndex)
     {
         currentLanguage = (Language)languageIndex;
+
+        alphabetValue.font = LanguagesTexts[languageIndex];
+
+        NumberValue.font = LanguagesTexts[languageIndex];
+
         Debug.Log("Language Changed To: " + currentLanguage.ToString());
+
+        alphabetValue.text = alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+        NumberValue.text = alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
+
+        LetterButtonText.font = LanguagesTexts[languageIndex];
+        NumberButtonText.font = NumberTexts[languageIndex];
+
+        LetterButtonText.text = alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+        NumberButtonText.text = alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
+
+
+       
     }
 
     // Start is called before the first frame update
@@ -287,9 +310,9 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Play("Start");
         alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
 
-        
 
 
+      
     }
 
 
