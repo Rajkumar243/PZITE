@@ -24,6 +24,7 @@ public class AnimationController : MonoBehaviour
         Tamil,
         Arabic,
         kannada,
+        Telugu
 
     }
     [System.Serializable]
@@ -192,6 +193,7 @@ public class AnimationController : MonoBehaviour
         ChangeLanguage(0);//English
 
 
+    
         // Collect all animations from the SkeletonAnimation's SkeletonData
         animationNames = GetAllAnimations();
 
@@ -201,9 +203,9 @@ public class AnimationController : MonoBehaviour
             Debug.Log("Animation: " + animationName);
         }
 
-       
 
-        StartCoroutine("PlayIdelAnimation",0f);
+        StartCoroutine("PlayIdelAnimation", 0f);
+
     }
     public void StopAllAnimations()
     {
@@ -446,29 +448,48 @@ public class AnimationController : MonoBehaviour
     public void PlayTouchAnimation()
     {
         isTouchAnimationPlaying = true;
-        StopAllCoroutines();
-        StopCoroutine("PlayIdelAnimationAfterDelay");
-        StopCoroutine("PlayTouchAnimationAfterDelay");
-        StopCoroutine("PlayIdelAnimation");
-        StopAllAnimation();
-        StopAllAnimations();
-        CancelInvoke("PlayIdelAnimation");
+        //StopAllCoroutines();
+        //StopCoroutine("PlayIdelAnimationAfterDelay");
+        //StopCoroutine("PlayTouchAnimationAfterDelay");
+        //StopCoroutine("PlayIdelAnimation");
+        //StopAllAnimation();
+        //StopAllAnimations();
+        //CancelInvoke("PlayIdelAnimation");
         string currentAnimationName = skeletonAnimation.AnimationState.GetCurrent(0)?.Animation.Name;
 
-        if (currentAnimationName == "Sleeping_new" || currentAnimationName == "Sleeping_new_v1")
+        if (currentAnimationName == "Sleeping" || currentAnimationName == "Sleeping_walkup")
         {
             skeletonAnimation.state.SetAnimation(0, "waking_up", false);
-            StartCoroutine("PlayIdelAnimation", 0f);
+            //StartCoroutine("PlayIdelAnimation", 0f);
+            Spine.Animation SleepAnimation = skeletonAnimation.Skeleton.Data.FindAnimation("waking_up");
+            float animationLength = SleepAnimation?.Duration ?? 0f; // Duration of the animation in seconds
+            StartCoroutine("PlayTouchAnimationAfterWakup", animationLength);
             Debug.Log("step-1");
-         }
+        }
         else
         {
             int CurrenttouchAnimationvalue = Random.Range(0, specialTouchAnimation.Count);
+            CerealBowl.SetActive(false);
+            CerealBowlSpoon.SetActive(false);
             StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
            Debug.Log("step-2");
         }
     }
 
+    IEnumerator PlayTouchAnimationAfterWakup(float delay)
+    {
+      
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Play the animation after the delay
+        int CurrenttouchAnimationvalue = Random.Range(0, specialTouchAnimation.Count);
+        CerealBowl.SetActive(false);
+        CerealBowlSpoon.SetActive(false);
+        StartCoroutine(PlayTouchAnimationAfterDelay(0f, CurrenttouchAnimationvalue));
+        Debug.Log("step-2");
+
+    }
 
     IEnumerator PlayIdelAnimationAfterDelay(float delay, int value)
     {
@@ -763,6 +784,7 @@ public class AnimationController : MonoBehaviour
         CancelInvoke("PlayIdelAnimation");
         int currrentSleepingAnimation = Random.Range(0, SleepingAnimation.Count);
         skeletonAnimation.state.SetAnimation(0, SleepingAnimation[currrentSleepingAnimation], true);
+
         Debug.Log(SleepingAnimation[currrentSleepingAnimation]);
 
 
