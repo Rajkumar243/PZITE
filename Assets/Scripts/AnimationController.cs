@@ -24,7 +24,9 @@ public class AnimationController : MonoBehaviour
         Tamil,
         Arabic,
         kannada,
-        Telugu
+        Telugu,
+        Spanish,
+        Chinese
 
     }
     [System.Serializable]
@@ -155,6 +157,7 @@ public class AnimationController : MonoBehaviour
 
 
     public List<string> EmotionAnimations;
+    public List<AudioClip> EmotionsAudioClip;
 
 
 
@@ -799,12 +802,12 @@ public class AnimationController : MonoBehaviour
     {
         CancelInvoke("PlayIdelAnimation");
         skeletonAnimation.state.SetAnimation(0, EmotionAnimations[currrentEmotionAnimation], true);
+        _audiosource.clip = EmotionsAudioClip[currrentEmotionAnimation];
+            
         Debug.Log(EmotionAnimations[currrentEmotionAnimation]);
         //EmotionAnimations voice
         // _audiosource.clip = EatingReactionVoice[currrenteatingReaction];
         // _audiosource.Play();
-
-
         Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
 
