@@ -152,8 +152,9 @@ public class AnimationController : MonoBehaviour
     public List<string> SleepingAnimation;
     public bool IsSleeping;
 
+    public AudioClip SleepingAudioclip;
 
-    public string WakeupAnimation;
+    public AudioClip WakeupAnimationAudioClip;
 
 
     public List<string> EmotionAnimations;
@@ -465,8 +466,9 @@ public class AnimationController : MonoBehaviour
             skeletonAnimation.state.SetAnimation(0, "waking_up", false);
             //StartCoroutine("PlayIdelAnimation", 0f);
             Spine.Animation SleepAnimation = skeletonAnimation.Skeleton.Data.FindAnimation("waking_up");
+           
             float animationLength = SleepAnimation?.Duration ?? 0f; // Duration of the animation in seconds
-            StartCoroutine("PlayTouchAnimationAfterWakup", animationLength);
+            StartCoroutine("PlayTouchAnimationAfterWakup", animationLength+1f);
             Debug.Log("step-1");
         }
         else
@@ -787,6 +789,8 @@ public class AnimationController : MonoBehaviour
         CancelInvoke("PlayIdelAnimation");
         int currrentSleepingAnimation = Random.Range(0, SleepingAnimation.Count);
         skeletonAnimation.state.SetAnimation(0, SleepingAnimation[currrentSleepingAnimation], true);
+        _audiosource.clip = SleepingAudioclip;
+        _audiosource.Play();
 
         Debug.Log(SleepingAnimation[currrentSleepingAnimation]);
 
@@ -803,11 +807,14 @@ public class AnimationController : MonoBehaviour
         CancelInvoke("PlayIdelAnimation");
         skeletonAnimation.state.SetAnimation(0, EmotionAnimations[currrentEmotionAnimation], true);
         _audiosource.clip = EmotionsAudioClip[currrentEmotionAnimation];
-            
+
+      
+        _audiosource.Play();
         Debug.Log(EmotionAnimations[currrentEmotionAnimation]);
         //EmotionAnimations voice
         // _audiosource.clip = EatingReactionVoice[currrenteatingReaction];
         // _audiosource.Play();
+                 
         Invoke("PlayIdelAnimation", 8f);//play idle animation after eat food animation
     }
 
@@ -815,10 +822,6 @@ public class AnimationController : MonoBehaviour
 
 
     //reset
-
-
-
-
 
     public void ResetAlphabets()
     {
@@ -856,6 +859,16 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        // Loop if current clip is found in EmotionsAudioClip[1..9]
+        bool shouldLoop = false;
+        for (int i = 0; i <= 9; i++)
+        {
+            if (_audiosource.clip == EmotionsAudioClip[i])
+            {
+                shouldLoop = true;
+                break;
+            }
+        }
+        _audiosource.loop = shouldLoop;
     }
 }
