@@ -61,6 +61,7 @@ public class AnimationController : MonoBehaviour
         public string animationName; // Animation stays same
      
         public MultiLanguageText displayText;
+        public int DisplayTextFontSize;
         public MultiLanguageAudio audioClip;
         public MultiLanguageAnimation characteranimation;
     }
@@ -167,17 +168,29 @@ public class AnimationController : MonoBehaviour
 
     public List<AlphabetData> alphabets;
 
+    private Coroutine TextTimer;
+    public AudioSource TimerAudio;
+    public Animator TimerAnimator;
+    private bool isTextTimerPaused = false;
+    public Image buttonIcon;           // The Image component on the button
+    public Sprite playIcon;            // Icon for play
+    public Sprite pauseIcon;           // Icon for pause
+
+
     public void ChangeLanguage(int languageIndex)
     {
         currentLanguage = (Language)languageIndex;
 
         alphabetValue.font = LanguagesTexts[languageIndex];
+        alphabetValue.fontSize = alphabets[(int)currentLanguage].DisplayTextFontSize;
+
 
         NumberValue.font = LanguagesTexts[languageIndex];
 
         Debug.Log("Language Changed To: " + currentLanguage.ToString());
 
         alphabetValue.text = alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+
         NumberValue.text = alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
 
         LetterButtonText.font = LanguagesTexts[languageIndex];
@@ -366,20 +379,36 @@ public class AnimationController : MonoBehaviour
 
         
     }
-    //numbers
+    public void TogglePause()
+    {
+        isTextTimerPaused = !isTextTimerPaused;
 
+        // Change icon
+        buttonIcon.sprite = isTextTimerPaused ? playIcon   : pauseIcon;
+
+       var TimerAudio = GetComponent<AudioSource>();
+
+        if (isTextTimerPaused)
+            TimerAudio.Pause();
+        else
+            TimerAudio  .Play();
+
+    }
     IEnumerator PlayAnimationAfterDelay(float delay, int value)
     {
+        while (isTextTimerPaused)
+        {
+            // Wait for the specified delay
+            yield return new WaitForSeconds(delay);
 
-        // Wait for the specified delay
-        yield return new WaitForSeconds(delay);
-
-        // Play the animation after the delay
-        skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value], false);
-        Debug.Log(alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value]);
-        //voice 
-        _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Letter[CurrentalphabetAudioClipValue];
-        _audiosource.Play();
+            // Play the animation after the delay
+            skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value], false);
+            Debug.Log(alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value]);
+            //voice 
+            _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Letter[CurrentalphabetAudioClipValue];
+            _audiosource.Play();
+        }
+      
     }
     
     IEnumerator PlayNumberAnimationAfterDelay(float delay, int value)
