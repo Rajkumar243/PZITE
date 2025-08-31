@@ -168,11 +168,15 @@ public class AnimationController : MonoBehaviour
 
     public List<AlphabetData> alphabets;
 
-    private Coroutine TextTimer;
+
+    public bool IsAlhpabet;
+    public bool IsNumber;
+
     public AudioSource TimerAudio;
     public Animator TimerAnimator;
     private bool isTextTimerPaused = false;
-    public Image buttonIcon;           // The Image component on the button
+    public Image AlphabetbuttonIcon;           // The Image component on the button
+    public Image NumberbuttonIcon;           // The Image component on the button
     public Sprite playIcon;            // Icon for play
     public Sprite pauseIcon;           // Icon for pause
 
@@ -207,7 +211,7 @@ public class AnimationController : MonoBehaviour
     void Start()
     {
         _audiosource = this.GetComponent<AudioSource>();
-        ChangeLanguage(0);//English
+        ChangeLanguage(1);//English
 
 
     
@@ -220,9 +224,10 @@ public class AnimationController : MonoBehaviour
             Debug.Log("Animation: " + animationName);
         }
 
+        //  StartCoroutine("idelCharacterAnimation", 0f);
+        //  StartCoroutine("AlphabetsIdelAnimation", 0f);
 
-        StartCoroutine("PlayIdelAnimation", 0f);
-
+        Invoke("PlayIdelAnimation", 0f);
     }
     public void StopAllAnimations()
     {
@@ -274,6 +279,8 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Play("Start");
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
 
+        TimerAudio.Play();
+        alphabetAnimation.speed = 1f;
     } 
     
 
@@ -286,6 +293,9 @@ public class AnimationController : MonoBehaviour
         numberAnimation.Play("Start");
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
 
+       
+        TimerAudio.Play();
+        numberAnimation.speed = 1f;
     }
 
 
@@ -309,6 +319,10 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Rebind();
         alphabetAnimation.Play("Start");
         alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+
+        AlphabetbuttonIcon.sprite = pauseIcon;
+        TimerAudio.Play();
+        alphabetAnimation.speed = 1f;
     }
 
     public void OnPreviousAlphabet()
@@ -329,9 +343,10 @@ public class AnimationController : MonoBehaviour
         alphabetAnimation.Play("Start");
         alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
 
+        AlphabetbuttonIcon.sprite = pauseIcon;
+        TimerAudio.Play();
+        alphabetAnimation.speed = 1f;
 
-
-      
     }
 
 
@@ -354,8 +369,12 @@ public class AnimationController : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
         numberAnimation.Rebind();
-        numberAnimation.Play("Start");
+
         NumberValue.text =alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
+
+        NumberbuttonIcon.sprite = pauseIcon;
+        TimerAudio.Play();
+        numberAnimation.speed = 1f;
     }
 
     public void OnPreviousNumber()
@@ -372,42 +391,92 @@ public class AnimationController : MonoBehaviour
         }
         StopAllCoroutines();
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
+      
         numberAnimation.Rebind();
-        numberAnimation.Play("Start");
         NumberValue.text =alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
 
+        NumberbuttonIcon.sprite = pauseIcon;
+        TimerAudio.Play();
+        numberAnimation.speed = 1f;
 
-        
     }
     public void TogglePause()
     {
         isTextTimerPaused = !isTextTimerPaused;
 
-        // Change icon
-        buttonIcon.sprite = isTextTimerPaused ? playIcon   : pauseIcon;
 
-       var TimerAudio = GetComponent<AudioSource>();
+        TimerAudio = TimerAudio.GetComponent<AudioSource>();
 
         if (isTextTimerPaused)
+        {
             TimerAudio.Pause();
+            Debug.Log("Pause Audio");
+            // Pause all animations
+            skeletonAnimation.AnimationState.ClearTrack(0);
+            // Change icon
+            AlphabetbuttonIcon.sprite = isTextTimerPaused ? playIcon : pauseIcon;
+            NumberbuttonIcon.sprite = isTextTimerPaused ? playIcon : pauseIcon;
+
+            numberAnimation.speed=0f;
+            alphabetAnimation.speed = 0f;
+
+            StopAllCoroutines();
+
+        }        
         else
-            TimerAudio  .Play();
+        {
+            TimerAudio.Play();
+            Debug.Log("Play timer Audio");
+            AlphabetbuttonIcon.sprite = isTextTimerPaused ? playIcon : pauseIcon;
+            NumberbuttonIcon.sprite = isTextTimerPaused ? playIcon : pauseIcon;
+
+            numberAnimation.speed = 1f;
+            alphabetAnimation.speed = 1f;
+
+            if (IsAlhpabet)
+            {
+                PlayAnimation(); 
+            }
+            if (IsNumber)
+            {
+                PlayNumberAnimation();
+            }
+
+        }       
+    }
+
+
+    public void OnChangeAlhpabet()
+    {
+        IsAlhpabet = true;
+        IsNumber = false;
 
     }
+
+    public void OnChangeNumber()
+    {
+        IsAlhpabet = false;
+        IsNumber = true;
+
+    }
+
+
     IEnumerator PlayAnimationAfterDelay(float delay, int value)
     {
-        while (isTextTimerPaused)
-        {
+     
             // Wait for the specified delay
             yield return new WaitForSeconds(delay);
 
             // Play the animation after the delay
             skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value], false);
             Debug.Log(alphabets[(int)currentLanguage].characteranimation.LetterAnimation[value]);
+
+            //timer stop 
+            TimerAudio.Stop();
             //voice 
             _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Letter[CurrentalphabetAudioClipValue];
             _audiosource.Play();
-        }
+  
       
     }
     
@@ -420,8 +489,12 @@ public class AnimationController : MonoBehaviour
         // Play the animation after the delay
         skeletonAnimation.state.SetAnimation(0, alphabets[(int)currentLanguage].characteranimation.NumericAnimation[value], false);
         Debug.Log(alphabets[(int)currentLanguage].characteranimation.NumericAnimation[value]);
+
+        TimerAudio.Stop();
+
         //voice 
         _audiosource.clip = alphabets[(int)currentLanguage].audioClip.Numeric[CurrentnumberAudioClipValue];
+   
         _audiosource.Play();
     }
 
