@@ -190,6 +190,7 @@ public class AnimationController : MonoBehaviour
 
 
         NumberValue.font = LanguagesTexts[languageIndex];
+       
 
         Debug.Log("Language Changed To: " + currentLanguage.ToString());
 
@@ -199,9 +200,11 @@ public class AnimationController : MonoBehaviour
 
         LetterButtonText.font = LanguagesTexts[languageIndex];
         NumberButtonText.font = NumberTexts[languageIndex];
+       
 
         LetterButtonText.text = alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
         NumberButtonText.text = alphabets[(int)currentLanguage].displayText.Numeric[CurrentNumberValue];
+     
 
 
        
@@ -553,17 +556,18 @@ public class AnimationController : MonoBehaviour
     
     public void PlayTouchAnimation()
     {
-        isTouchAnimationPlaying = true;
-        //StopAllCoroutines();
-        //StopCoroutine("PlayIdelAnimationAfterDelay");
-        //StopCoroutine("PlayTouchAnimationAfterDelay");
-        //StopCoroutine("PlayIdelAnimation");
-        //StopAllAnimation();
-        //StopAllAnimations();
-        //CancelInvoke("PlayIdelAnimation");
         string currentAnimationName = skeletonAnimation.AnimationState.GetCurrent(0)?.Animation.Name;
-
-        if (currentAnimationName == "Sleeping" || currentAnimationName == "Sleeping_walkup")
+        isTouchAnimationPlaying = true;
+        StopAllCoroutines();
+        StopCoroutine("PlayIdelAnimationAfterDelay");
+        StopCoroutine("PlayTouchAnimationAfterDelay");
+        StopCoroutine("PlayIdelAnimation");
+        StopAllAnimation();
+        StopAllAnimations();
+        CancelInvoke("PlayIdelAnimation");
+     
+        Debug.Log(currentAnimationName);
+        if (currentAnimationName == "Sleeping" )
         {
             skeletonAnimation.state.SetAnimation(0, "waking_up", false);
             //StartCoroutine("PlayIdelAnimation", 0f);
