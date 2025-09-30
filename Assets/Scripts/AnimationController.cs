@@ -280,6 +280,7 @@ public class AnimationController : MonoBehaviour
         StopAllCoroutines();
         alphabetAnimation.Rebind();
         alphabetAnimation.Play("Start");
+
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
 
         TimerAudio.Play();
@@ -294,6 +295,7 @@ public class AnimationController : MonoBehaviour
         StopAllCoroutines();
         numberAnimation.Rebind();
         numberAnimation.Play("Start");
+
         StartCoroutine(PlayNumberAnimationAfterDelay(5f, CurrentNumberValue));
 
        
@@ -319,10 +321,13 @@ public class AnimationController : MonoBehaviour
 
         StopAllCoroutines();
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
-        alphabetAnimation.Rebind();
-        alphabetAnimation.Play("Start");
-        alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+       // alphabetAnimation.Rebind();
 
+
+        alphabetAnimation.Play("Start", 0, 0f);
+        alphabetAnimation.Update(0f);
+        alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
+        Debug.Log("Playing animation: Start at index " + CurrentalphabetValue);
         AlphabetbuttonIcon.sprite = pauseIcon;
         TimerAudio.Play();
         alphabetAnimation.speed = 1f;
@@ -342,8 +347,10 @@ public class AnimationController : MonoBehaviour
         }
         StopAllCoroutines();
         StartCoroutine(PlayAnimationAfterDelay(5f, CurrentalphabetValue));
-        alphabetAnimation.Rebind();
-        alphabetAnimation.Play("Start");
+      //  alphabetAnimation.Rebind();
+
+        alphabetAnimation.Play("Start", 0, 0f);
+        alphabetAnimation.Update(0f);
         alphabetValue.text =alphabets[(int)currentLanguage].displayText.Letter[CurrentalphabetValue];
 
         AlphabetbuttonIcon.sprite = pauseIcon;
