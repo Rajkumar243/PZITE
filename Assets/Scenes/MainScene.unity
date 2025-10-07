@@ -41290,32 +41290,32 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 6d1030a7c12358c44adc62aede239b3f, type: 3}
     characteranimation:
       LetterAnimation:
-      - English_letters_1
-      - English_letters_2
-      - English_letters_3
-      - English_letters_4
-      - English_letters_5
-      - English_letters_6
-      - English_letters_7
-      - English_letters_8
-      - English_letters_9
-      - English_letters_10
-      - English_letters_11
-      - English_letters_12
-      - English_letters_13
-      - English_letters_14
-      - English_letters_15
-      - English_letters_16
-      - English_letters_17
-      - English_letters_18
-      - English_letters_19
-      - English_letters_20
-      - English_letters_21
-      - English_letters_22
-      - English_letters_23
-      - English_letters_24
-      - English_letters_25
-      - English_letters_26
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - English_1
       - English_2
@@ -41417,21 +41417,21 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 1eec4247e86351e4ea34beeb666bca64, type: 3}
     characteranimation:
       LetterAnimation:
-      - Malayalam_letter_01
-      - Malayalam_letter_02
-      - Malayalam_letter_03
-      - Malayalam_letter_04
-      - Malayalam_letter_05
-      - Malayalam_letter_06
-      - Malayalam_letter_07
-      - Malayalam_letter_08
-      - Malayalam_letter_09
-      - Malayalam_letter_10
-      - Malayalam_letter_11
-      - Malayalam_letter_12
-      - Malayalam_letter_13
-      - Malayalam_letter_14
-      - Malayalam_letter_15
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Malayalam_1
       - Malayalam_2
@@ -41531,18 +41531,18 @@ MonoBehaviour:
     characteranimation:
       LetterAnimation:
       - Hindi_Letter_1
-      - Hindi_Letter_2
-      - Hindi_Letter_3
-      - Hindi_Letter_4
-      - Hindi_Letter_5
-      - Hindi_Letter_6
-      - Hindi_Letter_7
-      - Hindi_Letter_8
-      - Hindi_Letter_9
-      - Hindi_Letter_10
-      - Hindi_Letter_11
-      - Hindi_Letter_12
-      - Hindi_Letter_13
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Hindi_1
       - Hindi_2
@@ -41640,18 +41640,18 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 5161d33377b8b4b4589ebd3a8138150e, type: 3}
     characteranimation:
       LetterAnimation:
-      - Tamil_letter_1
-      - Tamil_letter_2
-      - Tamil_letter_3
-      - Tamil_letter_4
-      - Tamil_letter_5
-      - Tamil_letter_6
-      - Tamil_letter_7
-      - Tamil_letter_8
-      - Tamil_letter_9
-      - Tamil_letter_10
-      - Tamil_letter_11
-      - Tamil_letter_12
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Tamil_1
       - Tamil_2
@@ -41779,34 +41779,34 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 86cd6092044dcd645be132dd0cbb3d89, type: 3}
     characteranimation:
       LetterAnimation:
-      - Arabic_Letter_1
-      - Arabic_Letter_2
-      - Arabic_Letter_3
-      - Arabic_Letter_4
-      - Arabic_Letter_5
-      - Arabic_Letter_6
-      - Arabic_Letter_7
-      - Arabic_Letter_8
-      - Arabic_Letter_9
-      - Arabic_Letter_10
-      - Arabic_Letter_11
-      - Arabic_Letter_12
-      - Arabic_Letter_13
-      - Arabic_Letter_14
-      - Arabic_Letter_15
-      - Arabic_Letter_16
-      - Arabic_Letter_17
-      - Arabic_Letter_18
-      - Arabic_Letter_19
-      - Arabic_Letter_20
-      - Arabic_Letter_21
-      - Arabic_Letter_22
-      - Arabic_Letter_23
-      - Arabic_Letter_24
-      - Arabic_Letter_25
-      - Arabic_Letter_26
-      - Arabic_Letter_27
-      - Arabic_Letter_28
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Arabic_1
       - Arabic_2
@@ -41903,18 +41903,18 @@ MonoBehaviour:
       - {fileID: 8300000, guid: d7d48aa671564c345ad7a617b61b9e27, type: 3}
     characteranimation:
       LetterAnimation:
-      - Bengali_letter 1
-      - Bengali_letter 2
-      - Bengali_letter 3
-      - Bengali_letter 4
-      - Bengali_letter 5
-      - Bengali_letter 6
-      - Bengali_letter 7
-      - Bengali_letter 8
-      - Bengali_letter 9
-      - Bengali_letter 10
-      - Bengali_letter 11
-      - Bengali_letter 12
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Bengali_1
       - Bengali_2
@@ -42016,21 +42016,21 @@ MonoBehaviour:
       - {fileID: 8300000, guid: e70ae436e0bc17e4d987d6633642ead5, type: 3}
     characteranimation:
       LetterAnimation:
-      - kannada_Letters_1
-      - kannada_Letters_2
-      - kannada_Letters_3
-      - kannada_Letters_4
-      - kannada_Letters_5
-      - kannada_Letters_6
-      - kannada_Letters_7
-      - kannada_Letters_8
-      - kannada_Letters_9
-      - kannada_Letters_10
-      - kannada_Letters_11
-      - kannada_Letters_12
-      - kannada_Letters_13
-      - kannada_Letters_14
-      - kannada_Letters_15
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Kannada _1
       - Kannada _2
@@ -42134,22 +42134,22 @@ MonoBehaviour:
       - {fileID: 8300000, guid: acb777d05890be14ba7f3f8b015906df, type: 3}
     characteranimation:
       LetterAnimation:
-      - Telugu_Letters_1
-      - Telugu_Letters_2
-      - Telugu_Letters_3
-      - Telugu_Letters_4
-      - Telugu_Letters_5
-      - Telugu_Letters_6
-      - Telugu_Letters_7
-      - Telugu_Letters_8
-      - Telugu_Letters_9
-      - Telugu_Letters_10
-      - Telugu_Letters_11
-      - Telugu_Letters_12
-      - Telugu_Letters_13
-      - Telugu_Letters_14
-      - Telugu_Letters_15
-      - Telugu_Letters_16
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Telugu_1
       - Telugu_2
@@ -42275,33 +42275,33 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 2325e8696b4e0744ab3f126fd7f31cab, type: 3}
     characteranimation:
       LetterAnimation:
-      - Spanish_Letter 1
-      - Spanish_Letter 2
-      - Spanish_Letter 3
-      - Spanish_Letter 4
-      - Spanish_Letter 5
-      - Spanish_Letter 6
-      - Spanish_Letter 7
-      - Spanish_Letter 8
-      - Spanish_Letter 9
-      - Spanish_Letter 10
-      - Spanish_Letter 11
-      - Spanish_Letter 12
-      - Spanish_Letter 13
-      - Spanish_Letter 14
-      - Spanish_Letter 15
-      - Spanish_Letter 16
-      - Spanish_Letter 17
-      - Spanish_Letter 18
-      - Spanish_Letter 19
-      - Spanish_Letter 20
-      - Spanish_Letter 21
-      - Spanish_Letter 22
-      - Spanish_Letter 23
-      - Spanish_Letter 24
-      - Spanish_Letter 25
-      - Spanish_Letter 26
-      - Spanish_Letter 27
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
+      - Hindi_Letter_1
       NumericAnimation:
       - Spanish_1
       - Spanish_2
