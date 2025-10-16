@@ -41446,6 +41446,7 @@ MonoBehaviour:
       - "\u0B92"
       - "\u0B93"
       - "\u0B94"
+      - "\u0B83"
       Numeric:
       - 1
       - 2
@@ -41482,7 +41483,6 @@ MonoBehaviour:
       - {fileID: 8300000, guid: d9d53545e0d3a734b96b53cf42158add, type: 3}
       - {fileID: 8300000, guid: 7d3029a77033652419d43550c5aa593f, type: 3}
       - {fileID: 8300000, guid: b1bf4ac8a299cc541a3dc370ff9fa3fd, type: 3}
-      - {fileID: 8300000, guid: 9bdca08a7c4af6b47bfa987e9afc50bd, type: 3}
       - {fileID: 8300000, guid: 7aa5a3ea21b3e1e48b97ee368f91deaf, type: 3}
       Numeric:
       - {fileID: 8300000, guid: eeead66be61b4744481e510030b40e2d, type: 3}
@@ -41507,6 +41507,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 5161d33377b8b4b4589ebd3a8138150e, type: 3}
     characteranimation:
       LetterAnimation:
+      - Hindi_Letter_1
       - Hindi_Letter_1
       - Hindi_Letter_1
       - Hindi_Letter_1

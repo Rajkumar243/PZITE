@@ -33,7 +33,7 @@ public class LoadingController : MonoBehaviour
             progressBar.value = Mathf.MoveTowards(progressBar.value, targetProgress, Time.deltaTime * loadSpeed);
 
             if (progressText != null)
-                progressText.text = Mathf.RoundToInt(progressBar.value * 100)+1 + "%";
+                progressText.text = Mathf.RoundToInt(progressBar.value * 100) + "%";
 
             if (op.progress >= 0.9f && progressBar.value >= 0.99f)
             {
