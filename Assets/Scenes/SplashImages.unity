@@ -297,7 +297,7 @@ MonoBehaviour:
   progressBar: {fileID: 4330863022818731815}
   progressText: {fileID: 1262112747}
   sceneToLoad: MainScene
-  loadSpeed: 0.3
+  loadSpeed: 0.5
 --- !u!1 &972071330
 GameObject:
   m_ObjectHideFlags: 0
